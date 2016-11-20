@@ -1,0 +1,513 @@
+28358 : GLUTINO, Gluten Free Wafers, Lemon Flavored
+http://api.nal.usda.gov/ndb/reports/?ndbno=28358&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+28358 : GLUTINO, Gluten Free Wafers, Lemon Flavored : Baked Products
+08688 : Cereals, QUAKER, Instant Oatmeal, Cinnamon Swirl, high fiber
+http://api.nal.usda.gov/ndb/reports/?ndbno=08688&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+08688 : Cereals, QUAKER, Instant Oatmeal, Cinnamon Swirl, high fiber : Breakfast Cereals
+12084 : Nuts, butternuts, dried
+http://api.nal.usda.gov/ndb/reports/?ndbno=12084&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+12084 : Nuts, butternuts, dried : Nut and Seed Products
+15022 : Fish, cusk, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=15022&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+15022 : Fish, cusk, raw : Finfish and Shellfish Products
+06242 : CAMPBELL'S CHUNKY Microwavable Bowls, Chicken and Dumplings Soup, ready-to-serve
+http://api.nal.usda.gov/ndb/reports/?ndbno=06242&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+06242 : CAMPBELL'S CHUNKY Microwavable Bowls, Chicken and Dumplings Soup, ready-to-serve : Soups, Sauces, and Gravies
+23270 : Beef, ribeye cap steak, boneless, separable lean only, trimmed to 0" fat, choice, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=23270&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+23270 : Beef, ribeye cap steak, boneless, separable lean only, trimmed to 0" fat, choice, raw : Beef Products
+15201 : Fish, mackerel, Pacific and jack, mixed species, cooked, dry heat
+http://api.nal.usda.gov/ndb/reports/?ndbno=15201&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+15201 : Fish, mackerel, Pacific and jack, mixed species, cooked, dry heat : Finfish and Shellfish Products
+20635 : Wheat flour, white (industrial), 11.5% protein, bleached, unenriched
+http://api.nal.usda.gov/ndb/reports/?ndbno=20635&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+20635 : Wheat flour, white (industrial), 11.5% protein, bleached, unenriched : Cereal Grains and Pasta
+21146 : School Lunch, pizza, BIG DADDY'S LS 16" 51% Whole Grain Rolled Edge Turkey Pepperoni Pizza, frozen
+http://api.nal.usda.gov/ndb/reports/?ndbno=21146&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+21146 : School Lunch, pizza, BIG DADDY'S LS 16" 51% Whole Grain Rolled Edge Turkey Pepperoni Pizza, frozen : Fast Foods
+28351 : Cookies, Marie biscuit
+http://api.nal.usda.gov/ndb/reports/?ndbno=28351&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+28351 : Cookies, Marie biscuit : Baked Products
+08511 : Cereals, MALT-O-MEAL, original, plain, prepared with water, without salt
+http://api.nal.usda.gov/ndb/reports/?ndbno=08511&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+08511 : Cereals, MALT-O-MEAL, original, plain, prepared with water, without salt : Breakfast Cereals
+21275 : PIZZA HUT 12" Pepperoni Pizza, Pan Crust
+http://api.nal.usda.gov/ndb/reports/?ndbno=21275&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+21275 : PIZZA HUT 12" Pepperoni Pizza, Pan Crust : Fast Foods
+18205 : Cookies, sugar, refrigerated dough
+http://api.nal.usda.gov/ndb/reports/?ndbno=18205&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+18205 : Cookies, sugar, refrigerated dough : Baked Products
+19201 : Puddings, vanilla, ready-to-eat
+http://api.nal.usda.gov/ndb/reports/?ndbno=19201&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+19201 : Puddings, vanilla, ready-to-eat : Sweets
+11830 : Potatoes, baked, skin only, with salt
+http://api.nal.usda.gov/ndb/reports/?ndbno=11830&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+11830 : Potatoes, baked, skin only, with salt : Vegetables and Vegetable Products
+01049 : Cream, fluid, half and half
+http://api.nal.usda.gov/ndb/reports/?ndbno=01049&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+01049 : Cream, fluid, half and half : Dairy and Egg Products
+09302 : Raspberries, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=09302&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+09302 : Raspberries, raw : Fruits and Fruit Juices
+43410 : Chicken, meatless, breaded, fried
+http://api.nal.usda.gov/ndb/reports/?ndbno=43410&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+43410 : Chicken, meatless, breaded, fried : Legumes and Legume Products
+21006 : Fast foods, biscuit with egg and steak
+http://api.nal.usda.gov/ndb/reports/?ndbno=21006&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+21006 : Fast foods, biscuit with egg and steak : Fast Foods
+06984 : Soup, SWANSON Chicken Broth 99% Fat Free
+http://api.nal.usda.gov/ndb/reports/?ndbno=06984&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+06984 : Soup, SWANSON Chicken Broth 99% Fat Free : Soups, Sauces, and Gravies
+16127 : Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)
+http://api.nal.usda.gov/ndb/reports/?ndbno=16127&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+16127 : Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari) : Legumes and Legume Products
+07045 : Luncheon meat, pork, canned
+http://api.nal.usda.gov/ndb/reports/?ndbno=07045&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+07045 : Luncheon meat, pork, canned : Sausages and Luncheon Meats
+17185 : Lamb, variety meats and by-products, brain, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=17185&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+17185 : Lamb, variety meats and by-products, brain, raw : Lamb, Veal, and Game Products
+17391 : Lamb, New Zealand, imported, hind-shank, separable lean only, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=17391&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+17391 : Lamb, New Zealand, imported, hind-shank, separable lean only, raw : Lamb, Veal, and Game Products
+15068 : Fish, pompano, florida, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=15068&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+15068 : Fish, pompano, florida, raw : Finfish and Shellfish Products
+05049 : Chicken, broilers or fryers, back, meat and skin, cooked, fried, batter
+http://api.nal.usda.gov/ndb/reports/?ndbno=05049&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+05049 : Chicken, broilers or fryers, back, meat and skin, cooked, fried, batter : Poultry Products
+20095 : Pasta, fresh-refrigerated, spinach, as purchased
+http://api.nal.usda.gov/ndb/reports/?ndbno=20095&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+20095 : Pasta, fresh-refrigerated, spinach, as purchased : Cereal Grains and Pasta
+17377 : Lamb, New Zealand, imported, testes, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=17377&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+17377 : Lamb, New Zealand, imported, testes, raw : Lamb, Veal, and Game Products
+10956 : Pork, loin, leg cap steak, boneless, separable lean and fat, cooked, broiled
+http://api.nal.usda.gov/ndb/reports/?ndbno=10956&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+10956 : Pork, loin, leg cap steak, boneless, separable lean and fat, cooked, broiled : Pork Products
+05681 : Chicken, dark meat, thigh, meat only, with added solution, cooked, braised
+http://api.nal.usda.gov/ndb/reports/?ndbno=05681&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+05681 : Chicken, dark meat, thigh, meat only, with added solution, cooked, braised : Poultry Products
+23431 : Beef, New Zealand, imported, ribs prepared, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=23431&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+23431 : Beef, New Zealand, imported, ribs prepared, raw : Beef Products
+19198 : Puddings, tapioca, dry mix
+http://api.nal.usda.gov/ndb/reports/?ndbno=19198&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+19198 : Puddings, tapioca, dry mix : Sweets
+23106 : Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled
+http://api.nal.usda.gov/ndb/reports/?ndbno=23106&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+23106 : Beef, chuck, under blade center steak, boneless, Denver Cut, separable lean and fat, trimmed to 0" fat, choice, cooked, grilled : Beef Products
+11474 : Squash, summer, crookneck and straightneck, frozen, cooked, boiled, drained, without salt
+http://api.nal.usda.gov/ndb/reports/?ndbno=11474&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+11474 : Squash, summer, crookneck and straightneck, frozen, cooked, boiled, drained, without salt : Vegetables and Vegetable Products
+13335 : Beef, variety meats and by-products, suet, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=13335&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+13335 : Beef, variety meats and by-products, suet, raw : Beef Products
+18947 : Pie crust, deep dish, frozen, baked, made with enriched flour
+http://api.nal.usda.gov/ndb/reports/?ndbno=18947&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+18947 : Pie crust, deep dish, frozen, baked, made with enriched flour : Baked Products
+28249 : SUNSHINE, CHEEZ-IT, White Cheddar, Reduced Fat Crackers
+http://api.nal.usda.gov/ndb/reports/?ndbno=28249&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+28249 : SUNSHINE, CHEEZ-IT, White Cheddar, Reduced Fat Crackers : Baked Products
+23192 : Beef, rib eye steak/roast, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=23192&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+23192 : Beef, rib eye steak/roast, bone-in, lip-on, separable lean and fat, trimmed to 1/8" fat, all grades, raw : Beef Products
+18354 : Strudel, apple
+http://api.nal.usda.gov/ndb/reports/?ndbno=18354&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+18354 : Strudel, apple : Baked Products
+11951 : Peppers, sweet, yellow, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=11951&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+11951 : Peppers, sweet, yellow, raw : Vegetables and Vegetable Products
+28344 : Crackers, gluten-free, multigrain and vegetable, made with corn starch and white rice flour
+http://api.nal.usda.gov/ndb/reports/?ndbno=28344&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+28344 : Crackers, gluten-free, multigrain and vegetable, made with corn starch and white rice flour : Baked Products
+08576 : Cereals, CREAM OF WHEAT, 1 minute cook time, dry
+http://api.nal.usda.gov/ndb/reports/?ndbno=08576&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+08576 : Cereals, CREAM OF WHEAT, 1 minute cook time, dry : Breakfast Cereals
+14421 : Beverages, coffee substitute, cereal grain beverage, powder, prepared with whole milk
+http://api.nal.usda.gov/ndb/reports/?ndbno=14421&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+14421 : Beverages, coffee substitute, cereal grain beverage, powder, prepared with whole milk : Beverages
+28294 : Cookie, chocolate, with icing or coating
+http://api.nal.usda.gov/ndb/reports/?ndbno=28294&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+28294 : Cookie, chocolate, with icing or coating : Baked Products
+11921 : Peppers, sweet, red, sauteed
+http://api.nal.usda.gov/ndb/reports/?ndbno=11921&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+11921 : Peppers, sweet, red, sauteed : Vegetables and Vegetable Products
+19419 : Snacks, corn cakes
+http://api.nal.usda.gov/ndb/reports/?ndbno=19419&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+19419 : Snacks, corn cakes : Snacks
+05177 : Turkey, liver, all classes, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=05177&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+05177 : Turkey, liver, all classes, raw : Poultry Products
+11878 : Taro, cooked, with salt
+http://api.nal.usda.gov/ndb/reports/?ndbno=11878&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+11878 : Taro, cooked, with salt : Vegetables and Vegetable Products
+09448 : Nance, canned, syrup, drained
+http://api.nal.usda.gov/ndb/reports/?ndbno=09448&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+09448 : Nance, canned, syrup, drained : Fruits and Fruit Juices
+19024 : Snacks, granola bars, soft, coated, milk chocolate coating, chocolate chip
+http://api.nal.usda.gov/ndb/reports/?ndbno=19024&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+19024 : Snacks, granola bars, soft, coated, milk chocolate coating, chocolate chip : Snacks
+23323 : Beef, Australian, imported, Wagyu, loin, tenderloin steak/roast, boneless, separable lean and fat, Aust. marble score 9, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=23323&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+23323 : Beef, Australian, imported, Wagyu, loin, tenderloin steak/roast, boneless, separable lean and fat, Aust. marble score 9, raw : Beef Products
+20381 : Wheat flour, white, all-purpose, enriched, calcium-fortified
+http://api.nal.usda.gov/ndb/reports/?ndbno=20381&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+20381 : Wheat flour, white, all-purpose, enriched, calcium-fortified : Cereal Grains and Pasta
+16089 : Peanuts, all types, oil-roasted, with salt
+http://api.nal.usda.gov/ndb/reports/?ndbno=16089&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+16089 : Peanuts, all types, oil-roasted, with salt : Legumes and Legume Products
+06223 : PREGO Pasta, Flavored with Meat Italian Sauce, ready-to-serve
+http://api.nal.usda.gov/ndb/reports/?ndbno=06223&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+06223 : PREGO Pasta, Flavored with Meat Italian Sauce, ready-to-serve : Soups, Sauces, and Gravies
+11851 : Rutabagas, cooked, boiled, drained, with salt
+http://api.nal.usda.gov/ndb/reports/?ndbno=11851&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+11851 : Rutabagas, cooked, boiled, drained, with salt : Vegetables and Vegetable Products
+07081 : Turkey breast, sliced, prepackaged
+http://api.nal.usda.gov/ndb/reports/?ndbno=07081&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+07081 : Turkey breast, sliced, prepackaged : Sausages and Luncheon Meats
+25006 : Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON Double Chocolate Nut Bar
+http://api.nal.usda.gov/ndb/reports/?ndbno=25006&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+25006 : Formulated bar, MARS SNACKFOOD US, SNICKERS MARATHON Double Chocolate Nut Bar : Snacks
+10033 : Pork, fresh, loin, blade (chops), bone-in, separable lean only, cooked, braised
+http://api.nal.usda.gov/ndb/reports/?ndbno=10033&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+10033 : Pork, fresh, loin, blade (chops), bone-in, separable lean only, cooked, braised : Pork Products
+17137 : Veal, sirloin, separable lean only, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=17137&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+17137 : Veal, sirloin, separable lean only, raw : Lamb, Veal, and Game Products
+17052 : Lamb, domestic, shoulder, blade, separable lean and fat, trimmed to 1/4" fat, choice, cooked, braised
+http://api.nal.usda.gov/ndb/reports/?ndbno=17052&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+17052 : Lamb, domestic, shoulder, blade, separable lean and fat, trimmed to 1/4" fat, choice, cooked, braised : Lamb, Veal, and Game Products
+06419 : Soup, chicken noodle, canned, prepared with equal volume water
+http://api.nal.usda.gov/ndb/reports/?ndbno=06419&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+06419 : Soup, chicken noodle, canned, prepared with equal volume water : Soups, Sauces, and Gravies
+13829 : Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted
+http://api.nal.usda.gov/ndb/reports/?ndbno=13829&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+13829 : Beef, rib, whole (ribs 6-12), separable lean and fat, trimmed to 1/8" fat, choice, cooked, roasted : Beef Products
+14648 : Beverages, fruit juice drink, greater than 3% fruit juice, high vitamin C and added thiamin
+http://api.nal.usda.gov/ndb/reports/?ndbno=14648&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+14648 : Beverages, fruit juice drink, greater than 3% fruit juice, high vitamin C and added thiamin : Beverages
+19092 : Candies, TWIZZLERS NIBS CHERRY BITS
+http://api.nal.usda.gov/ndb/reports/?ndbno=19092&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+19092 : Candies, TWIZZLERS NIBS CHERRY BITS : Sweets
+09001 : Acerola, (west indian cherry), raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=09001&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+09001 : Acerola, (west indian cherry), raw : Fruits and Fruit Juices
+05641 : Ostrich, ground, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=05641&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+05641 : Ostrich, ground, raw : Poultry Products
+19327 : Candies, MARS SNACKFOOD US, COCOAVIA Blueberry and Almond Chocolate Bar
+http://api.nal.usda.gov/ndb/reports/?ndbno=19327&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+19327 : Candies, MARS SNACKFOOD US, COCOAVIA Blueberry and Almond Chocolate Bar : Sweets
+01168 : Cheese, low fat, cheddar or colby
+http://api.nal.usda.gov/ndb/reports/?ndbno=01168&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+01168 : Cheese, low fat, cheddar or colby : Dairy and Egg Products
+09400 : Apple juice, canned or bottled, unsweetened, with added ascorbic acid
+http://api.nal.usda.gov/ndb/reports/?ndbno=09400&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+09400 : Apple juice, canned or bottled, unsweetened, with added ascorbic acid : Fruits and Fruit Juices
+08215 : Cereals ready-to-eat, QUAKER, Oatmeal Squares, cinnamon
+http://api.nal.usda.gov/ndb/reports/?ndbno=08215&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+08215 : Cereals ready-to-eat, QUAKER, Oatmeal Squares, cinnamon : Breakfast Cereals
+09084 : Currants, red and white, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=09084&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+09084 : Currants, red and white, raw : Fruits and Fruit Juices
+18614 : MARTHA WHITE FOODS, Martha White's Chewy Fudge Brownie Mix, dry
+http://api.nal.usda.gov/ndb/reports/?ndbno=18614&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+18614 : MARTHA WHITE FOODS, Martha White's Chewy Fudge Brownie Mix, dry : Baked Products
+16548 : MORNINGSTAR FARMS Grillers Original, frozen, unprepared
+http://api.nal.usda.gov/ndb/reports/?ndbno=16548&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+16548 : MORNINGSTAR FARMS Grillers Original, frozen, unprepared : Legumes and Legume Products
+19860 : Cocoa, dry powder, hi-fat or breakfast, processed with alkali
+http://api.nal.usda.gov/ndb/reports/?ndbno=19860&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+19860 : Cocoa, dry powder, hi-fat or breakfast, processed with alkali : Sweets
+17180 : Game meat, rabbit, wild, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=17180&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+17180 : Game meat, rabbit, wild, raw : Lamb, Veal, and Game Products
+22528 : Turkey Pot Pie, frozen entree
+http://api.nal.usda.gov/ndb/reports/?ndbno=22528&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+22528 : Turkey Pot Pie, frozen entree : Meals, Entrees, and Side Dishes
+11720 : Beans, pinto, immature seeds, frozen, cooked, boiled, drained, with salt
+http://api.nal.usda.gov/ndb/reports/?ndbno=11720&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+11720 : Beans, pinto, immature seeds, frozen, cooked, boiled, drained, with salt : Vegetables and Vegetable Products
+14120 : Alcoholic beverage, wine, table, white, Muller Thurgau
+http://api.nal.usda.gov/ndb/reports/?ndbno=14120&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+14120 : Alcoholic beverage, wine, table, white, Muller Thurgau : Beverages
+10071 : Pork, fresh, shoulder, whole, separable lean and fat, cooked, roasted
+http://api.nal.usda.gov/ndb/reports/?ndbno=10071&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+10071 : Pork, fresh, shoulder, whole, separable lean and fat, cooked, roasted : Pork Products
+09055 : Blueberries, frozen, sweetened
+http://api.nal.usda.gov/ndb/reports/?ndbno=09055&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+09055 : Blueberries, frozen, sweetened : Fruits and Fruit Juices
+23426 : Beef, New Zealand, imported, manufacturing beef, cooked, boiled
+http://api.nal.usda.gov/ndb/reports/?ndbno=23426&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+23426 : Beef, New Zealand, imported, manufacturing beef, cooked, boiled : Beef Products
+09088 : Elderberries, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=09088&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+09088 : Elderberries, raw : Fruits and Fruit Juices
+16076 : Lupins, mature seeds, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=16076&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+16076 : Lupins, mature seeds, raw : Legumes and Legume Products
+20118 : Noodles, flat, crunchy, Chinese restaurant
+http://api.nal.usda.gov/ndb/reports/?ndbno=20118&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+20118 : Noodles, flat, crunchy, Chinese restaurant : Cereal Grains and Pasta
+17346 : Game meat, deer, shoulder clod, separable lean only, cooked, braised
+http://api.nal.usda.gov/ndb/reports/?ndbno=17346&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+17346 : Game meat, deer, shoulder clod, separable lean only, cooked, braised : Lamb, Veal, and Game Products
+18388 : Muffins, wheat bran, toaster-type with raisins, toasted
+http://api.nal.usda.gov/ndb/reports/?ndbno=18388&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+18388 : Muffins, wheat bran, toaster-type with raisins, toasted : Baked Products
+08701 : Cereals ready-to-eat, KELLOGG, KELLOGG'S SPECIAL K Multi-grain
+http://api.nal.usda.gov/ndb/reports/?ndbno=08701&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+08701 : Cereals ready-to-eat, KELLOGG, KELLOGG'S SPECIAL K Multi-grain : Breakfast Cereals
+14135 : Alcoholic beverage, wine, table, white, late harvest
+http://api.nal.usda.gov/ndb/reports/?ndbno=14135&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+14135 : Alcoholic beverage, wine, table, white, late harvest : Beverages
+36015 : Restaurant, family style, chicken fingers, from kid's menu
+http://api.nal.usda.gov/ndb/reports/?ndbno=36015&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+36015 : Restaurant, family style, chicken fingers, from kid's menu : Restaurant Foods
+01200 : Reddi Wip Fat Free Whipped Topping
+http://api.nal.usda.gov/ndb/reports/?ndbno=01200&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+01200 : Reddi Wip Fat Free Whipped Topping : Dairy and Egg Products
+43355 : Mayonnaise, low sodium, low calorie or diet
+http://api.nal.usda.gov/ndb/reports/?ndbno=43355&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+43355 : Mayonnaise, low sodium, low calorie or diet : Fats and Oils
+18116 : Cake, gingerbread, prepared from recipe
+http://api.nal.usda.gov/ndb/reports/?ndbno=18116&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+18116 : Cake, gingerbread, prepared from recipe : Baked Products
+03826 : Infant formula, MEAD JOHNSON, ENFAMIL, PROSOBEE, with iron, powder, not reconstituted
+http://api.nal.usda.gov/ndb/reports/?ndbno=03826&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+03826 : Infant formula, MEAD JOHNSON, ENFAMIL, PROSOBEE, with iron, powder, not reconstituted : Baby Foods
+13963 : Beef, chuck, mock tender steak, separable lean only, trimmed to 0" fat, select, cooked, broiled
+http://api.nal.usda.gov/ndb/reports/?ndbno=13963&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+13963 : Beef, chuck, mock tender steak, separable lean only, trimmed to 0" fat, select, cooked, broiled : Beef Products
+11372 : Potatoes, scalloped, home-prepared with butter
+http://api.nal.usda.gov/ndb/reports/?ndbno=11372&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+11372 : Potatoes, scalloped, home-prepared with butter : Vegetables and Vegetable Products
+23622 : Beef, round, bottom round, steak, separable lean only, trimmed to 1/8" fat, choice, cooked, braised
+http://api.nal.usda.gov/ndb/reports/?ndbno=23622&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+23622 : Beef, round, bottom round, steak, separable lean only, trimmed to 1/8" fat, choice, cooked, braised : Beef Products
+14612 : Beverages, V8 SPLASH Juice Drinks, Fruit Medley
+http://api.nal.usda.gov/ndb/reports/?ndbno=14612&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+14612 : Beverages, V8 SPLASH Juice Drinks, Fruit Medley : Beverages
+35201 : Prairie Turnips, boiled (Northern Plains Indians)
+http://api.nal.usda.gov/ndb/reports/?ndbno=35201&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+35201 : Prairie Turnips, boiled (Northern Plains Indians) : American Indian/Alaska Native Foods
+11527 : Tomatoes, green, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=11527&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+11527 : Tomatoes, green, raw : Vegetables and Vegetable Products
+12109 : Nuts, coconut meat, dried (desiccated), sweetened, flaked, packaged
+http://api.nal.usda.gov/ndb/reports/?ndbno=12109&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+12109 : Nuts, coconut meat, dried (desiccated), sweetened, flaked, packaged : Nut and Seed Products
+11531 : Tomatoes, red, ripe, canned, packed in tomato juice
+http://api.nal.usda.gov/ndb/reports/?ndbno=11531&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+11531 : Tomatoes, red, ripe, canned, packed in tomato juice : Vegetables and Vegetable Products
+18400 : Crackers, matzo, egg and onion
+http://api.nal.usda.gov/ndb/reports/?ndbno=18400&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+18400 : Crackers, matzo, egg and onion : Baked Products
+01253 : Cheese, pasteurized process, American, without added vitamin D
+http://api.nal.usda.gov/ndb/reports/?ndbno=01253&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+01253 : Cheese, pasteurized process, American, without added vitamin D : Dairy and Egg Products
+25003 : Snacks, candy rolls, yogurt-covered, fruit flavored with high vitamin C
+http://api.nal.usda.gov/ndb/reports/?ndbno=25003&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+25003 : Snacks, candy rolls, yogurt-covered, fruit flavored with high vitamin C : Snacks
+11168 : Corn, sweet, yellow, cooked, boiled, drained, without salt
+http://api.nal.usda.gov/ndb/reports/?ndbno=11168&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+11168 : Corn, sweet, yellow, cooked, boiled, drained, without salt : Vegetables and Vegetable Products
+16600 : MORNINGSTAR FARMS Sesame Chik'n Entree, frozen, unprepared
+http://api.nal.usda.gov/ndb/reports/?ndbno=16600&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+16600 : MORNINGSTAR FARMS Sesame Chik'n Entree, frozen, unprepared : Legumes and Legume Products
+19107 : Candies, hard
+http://api.nal.usda.gov/ndb/reports/?ndbno=19107&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+19107 : Candies, hard : Sweets
+23596 : Beef, brisket, flat half, separable lean only, trimmed to 1/8" fat, all grades, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=23596&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+23596 : Beef, brisket, flat half, separable lean only, trimmed to 1/8" fat, all grades, raw : Beef Products
+13408 : Beef, round, bottom round, roast, separable lean only, trimmed to 0" fat, all grades, cooked, roasted
+http://api.nal.usda.gov/ndb/reports/?ndbno=13408&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+13408 : Beef, round, bottom round, roast, separable lean only, trimmed to 0" fat, all grades, cooked, roasted : Beef Products
+05005 : Chicken, broilers or fryers, meat and skin and giblets and neck, stewed
+http://api.nal.usda.gov/ndb/reports/?ndbno=05005&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+05005 : Chicken, broilers or fryers, meat and skin and giblets and neck, stewed : Poultry Products
+16353 : Broadbeans (fava beans), mature seeds, cooked, boiled, with salt
+http://api.nal.usda.gov/ndb/reports/?ndbno=16353&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+16353 : Broadbeans (fava beans), mature seeds, cooked, boiled, with salt : Legumes and Legume Products
+11785 : Gourd, dishcloth (towelgourd), cooked, boiled, drained, with salt
+http://api.nal.usda.gov/ndb/reports/?ndbno=11785&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+11785 : Gourd, dishcloth (towelgourd), cooked, boiled, drained, with salt : Vegetables and Vegetable Products
+13974 : Beef, chuck eye roast, boneless, America's Beef Roast, separable lean only, trimmed to 0" fat, select, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=13974&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+13974 : Beef, chuck eye roast, boneless, America's Beef Roast, separable lean only, trimmed to 0" fat, select, raw : Beef Products
+19003 : Snacks, corn-based, extruded, chips, plain
+http://api.nal.usda.gov/ndb/reports/?ndbno=19003&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+19003 : Snacks, corn-based, extruded, chips, plain : Snacks
+21335 : McDONALD'S, Hot Caramel Sundae
+http://api.nal.usda.gov/ndb/reports/?ndbno=21335&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+21335 : McDONALD'S, Hot Caramel Sundae : Fast Foods
+17227 : Lamb, domestic, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, choice, cooked
+http://api.nal.usda.gov/ndb/reports/?ndbno=17227&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+17227 : Lamb, domestic, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8" fat, choice, cooked : Lamb, Veal, and Game Products
+08584 : Cereals ready-to-eat, KELLOGG'S SPECIAL K Chocolatey Delight
+http://api.nal.usda.gov/ndb/reports/?ndbno=08584&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+08584 : Cereals ready-to-eat, KELLOGG'S SPECIAL K Chocolatey Delight : Breakfast Cereals
+06409 : Soup, beef noodle, canned, prepared with equal volume water
+http://api.nal.usda.gov/ndb/reports/?ndbno=06409&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+06409 : Soup, beef noodle, canned, prepared with equal volume water : Soups, Sauces, and Gravies
+14145 : Beverages, carbonated, SPRITE, lemon-lime, without caffeine
+http://api.nal.usda.gov/ndb/reports/?ndbno=14145&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+14145 : Beverages, carbonated, SPRITE, lemon-lime, without caffeine : Beverages
+06443 : Soup, cream of mushroom, canned, prepared with equal volume water
+http://api.nal.usda.gov/ndb/reports/?ndbno=06443&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+06443 : Soup, cream of mushroom, canned, prepared with equal volume water : Soups, Sauces, and Gravies
+11567 : Turnips, frozen, cooked, boiled, drained, without salt
+http://api.nal.usda.gov/ndb/reports/?ndbno=11567&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+11567 : Turnips, frozen, cooked, boiled, drained, without salt : Vegetables and Vegetable Products
+10946 : Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean only, with added solution, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=10946&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+10946 : Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean only, with added solution, raw : Pork Products
+28102 : KEEBLER, GRIPZ, CHIPS DELUXE, Chocolate Chip Cookies, bite-size
+http://api.nal.usda.gov/ndb/reports/?ndbno=28102&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+28102 : KEEBLER, GRIPZ, CHIPS DELUXE, Chocolate Chip Cookies, bite-size : Baked Products
+20447 : Rice, white, long-grain, parboiled, unenriched, cooked
+http://api.nal.usda.gov/ndb/reports/?ndbno=20447&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+20447 : Rice, white, long-grain, parboiled, unenriched, cooked : Cereal Grains and Pasta
+01096 : Milk, canned, evaporated, with added vitamin D and without added vitamin A
+http://api.nal.usda.gov/ndb/reports/?ndbno=01096&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+01096 : Milk, canned, evaporated, with added vitamin D and without added vitamin A : Dairy and Egg Products
+21349 : McDONALD'S, NEWMAN'S OWN Ranch Dressing
+http://api.nal.usda.gov/ndb/reports/?ndbno=21349&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+21349 : McDONALD'S, NEWMAN'S OWN Ranch Dressing : Fast Foods
+14425 : Beverages, Orange-flavor drink, breakfast type, with pulp, frozen concentrate, prepared with water
+http://api.nal.usda.gov/ndb/reports/?ndbno=14425&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+14425 : Beverages, Orange-flavor drink, breakfast type, with pulp, frozen concentrate, prepared with water : Beverages
+07003 : Beerwurst, beer salami, pork
+http://api.nal.usda.gov/ndb/reports/?ndbno=07003&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+07003 : Beerwurst, beer salami, pork : Sausages and Luncheon Meats
+43340 : Cheese, parmesan, low sodium
+http://api.nal.usda.gov/ndb/reports/?ndbno=43340&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+43340 : Cheese, parmesan, low sodium : Dairy and Egg Products
+10038 : Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, cooked, broiled
+http://api.nal.usda.gov/ndb/reports/?ndbno=10038&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+10038 : Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, cooked, broiled : Pork Products
+04656 : Oil, industrial, palm kernel, confection fat, uses similar to high quality cocoa butter
+http://api.nal.usda.gov/ndb/reports/?ndbno=04656&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+04656 : Oil, industrial, palm kernel, confection fat, uses similar to high quality cocoa butter : Fats and Oils
+12663 : Seeds, pumpkin and squash seeds, whole, roasted, with salt added
+http://api.nal.usda.gov/ndb/reports/?ndbno=12663&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+12663 : Seeds, pumpkin and squash seeds, whole, roasted, with salt added : Nut and Seed Products
+18406 : Bagels, plain, enriched, without calcium propionate (includes onion, poppy, sesame)
+http://api.nal.usda.gov/ndb/reports/?ndbno=18406&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+18406 : Bagels, plain, enriched, without calcium propionate (includes onion, poppy, sesame) : Baked Products
+28338 : Bread, gluten-free, white, made with tapioca starch and brown rice flour
+http://api.nal.usda.gov/ndb/reports/?ndbno=28338&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+28338 : Bread, gluten-free, white, made with tapioca starch and brown rice flour : Baked Products
+06961 : Sauce, peppers, hot, chili, mature red, canned
+http://api.nal.usda.gov/ndb/reports/?ndbno=06961&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+06961 : Sauce, peppers, hot, chili, mature red, canned : Soups, Sauces, and Gravies
+08554 : Cereals ready-to-eat, POST SELECTS Maple Pecan Crunch
+http://api.nal.usda.gov/ndb/reports/?ndbno=08554&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+08554 : Cereals ready-to-eat, POST SELECTS Maple Pecan Crunch : Breakfast Cereals
+15127 : Fish, tuna, fresh, yellowfin, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=15127&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+15127 : Fish, tuna, fresh, yellowfin, raw : Finfish and Shellfish Products
+09203 : Oranges, raw, Florida
+http://api.nal.usda.gov/ndb/reports/?ndbno=09203&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+09203 : Oranges, raw, Florida : Fruits and Fruit Juices
+28195 : MOTHER'S, Chocolate Chip Cookies
+http://api.nal.usda.gov/ndb/reports/?ndbno=28195&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+28195 : MOTHER'S, Chocolate Chip Cookies : Baked Products
+11430 : Radishes, oriental, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=11430&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+11430 : Radishes, oriental, raw : Vegetables and Vegetable Products
+16011 : Beans, baked, canned, with pork and tomato sauce
+http://api.nal.usda.gov/ndb/reports/?ndbno=16011&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+16011 : Beans, baked, canned, with pork and tomato sauce : Legumes and Legume Products
+23554 : Beef, shoulder steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled
+http://api.nal.usda.gov/ndb/reports/?ndbno=23554&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+23554 : Beef, shoulder steak, boneless, separable lean and fat, trimmed to 0" fat, all grades, cooked, grilled : Beef Products
+09156 : Lemon peel, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=09156&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+09156 : Lemon peel, raw : Fruits and Fruit Juices
+23621 : Beef, round, top round, steak, separable lean only, trimmed to 1/8" fat, choice, cooked, broiled
+http://api.nal.usda.gov/ndb/reports/?ndbno=23621&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+23621 : Beef, round, top round, steak, separable lean only, trimmed to 1/8" fat, choice, cooked, broiled : Beef Products
+31027 : Potatoes, yellow fleshed, french fried, frozen, unprepared
+http://api.nal.usda.gov/ndb/reports/?ndbno=31027&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+31027 : Potatoes, yellow fleshed, french fried, frozen, unprepared : Vegetables and Vegetable Products
+11945 : Pickle relish, sweet
+http://api.nal.usda.gov/ndb/reports/?ndbno=11945&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+11945 : Pickle relish, sweet : Vegetables and Vegetable Products
+23498 : Beef, composite of trimmed retail cuts, separable lean only, trimmed to 1/8" fat, select, cooked
+http://api.nal.usda.gov/ndb/reports/?ndbno=23498&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+23498 : Beef, composite of trimmed retail cuts, separable lean only, trimmed to 1/8" fat, select, cooked : Beef Products
+03127 : Babyfood, vegetables, spinach, creamed, strained
+http://api.nal.usda.gov/ndb/reports/?ndbno=03127&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+03127 : Babyfood, vegetables, spinach, creamed, strained : Baby Foods
+17249 : Lamb, domestic, shoulder, arm, separable lean and fat, trimmed to 1/8" fat, choice, roasted
+http://api.nal.usda.gov/ndb/reports/?ndbno=17249&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+17249 : Lamb, domestic, shoulder, arm, separable lean and fat, trimmed to 1/8" fat, choice, roasted : Lamb, Veal, and Game Products
+18121 : Cake, pound, commercially prepared, other than all butter, enriched
+http://api.nal.usda.gov/ndb/reports/?ndbno=18121&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+18121 : Cake, pound, commercially prepared, other than all butter, enriched : Baked Products
+06439 : CAMPBELL'S CHUNKY Soups, Savory Chicken with White & Wild Rice Soup
+http://api.nal.usda.gov/ndb/reports/?ndbno=06439&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+06439 : CAMPBELL'S CHUNKY Soups, Savory Chicken with White & Wild Rice Soup : Soups, Sauces, and Gravies
+18155 : Cookies, butter, commercially prepared, enriched
+http://api.nal.usda.gov/ndb/reports/?ndbno=18155&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+18155 : Cookies, butter, commercially prepared, enriched : Baked Products
+14048 : Beverages, FUZE, orange mango, fortified with vitamins A, C, E, B6
+http://api.nal.usda.gov/ndb/reports/?ndbno=14048&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+14048 : Beverages, FUZE, orange mango, fortified with vitamins A, C, E, B6 : Beverages
+28268 : KEEBLER, Sugar Cones
+http://api.nal.usda.gov/ndb/reports/?ndbno=28268&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+28268 : KEEBLER, Sugar Cones : Baked Products
+11361 : Potatoes, roasted, salt added in processing, frozen, unprepared
+http://api.nal.usda.gov/ndb/reports/?ndbno=11361&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+11361 : Potatoes, roasted, salt added in processing, frozen, unprepared : Vegetables and Vegetable Products
+18974 : KASHI, TLC, Honey Sesame Crackers
+http://api.nal.usda.gov/ndb/reports/?ndbno=18974&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+18974 : KASHI, TLC, Honey Sesame Crackers : Baked Products
+19860 : Cocoa, dry powder, hi-fat or breakfast, processed with alkali
+http://api.nal.usda.gov/ndb/reports/?ndbno=19860&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+19860 : Cocoa, dry powder, hi-fat or breakfast, processed with alkali : Sweets
+28076 : KEEBLER, FUDGE SHOPPE, Cheesecake Middles, Dark Chocolate
+http://api.nal.usda.gov/ndb/reports/?ndbno=28076&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+28076 : KEEBLER, FUDGE SHOPPE, Cheesecake Middles, Dark Chocolate : Baked Products
+19109 : Candies, KIT KAT Wafer Bar
+http://api.nal.usda.gov/ndb/reports/?ndbno=19109&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+19109 : Candies, KIT KAT Wafer Bar : Sweets
+04367 : Salad dressing, french dressing, fat-free
+http://api.nal.usda.gov/ndb/reports/?ndbno=04367&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+04367 : Salad dressing, french dressing, fat-free : Fats and Oils
+10932 : Pork, cured, ham, rump, bone-in, separable lean only, unheated
+http://api.nal.usda.gov/ndb/reports/?ndbno=10932&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+10932 : Pork, cured, ham, rump, bone-in, separable lean only, unheated : Pork Products
+28228 : MURRAY, SUGAR FREE, Vanilla Creme Sandwich Cookies
+http://api.nal.usda.gov/ndb/reports/?ndbno=28228&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+28228 : MURRAY, SUGAR FREE, Vanilla Creme Sandwich Cookies : Baked Products
+15029 : Fish, flatfish (flounder and sole species), cooked, dry heat
+http://api.nal.usda.gov/ndb/reports/?ndbno=15029&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+15029 : Fish, flatfish (flounder and sole species), cooked, dry heat : Finfish and Shellfish Products
+20071 : Wheat, hard red spring
+http://api.nal.usda.gov/ndb/reports/?ndbno=20071&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+20071 : Wheat, hard red spring : Cereal Grains and Pasta
+06064 : Soup, turkey, chunky, canned, ready-to-serve
+http://api.nal.usda.gov/ndb/reports/?ndbno=06064&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+06064 : Soup, turkey, chunky, canned, ready-to-serve : Soups, Sauces, and Gravies
+14211 : Beverages, tea, black, ready-to-drink, lemon, diet
+http://api.nal.usda.gov/ndb/reports/?ndbno=14211&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+14211 : Beverages, tea, black, ready-to-drink, lemon, diet : Beverages
+14462 : Beverages, Propel Zero, fruit-flavored, non-carbonated
+http://api.nal.usda.gov/ndb/reports/?ndbno=14462&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+14462 : Beverages, Propel Zero, fruit-flavored, non-carbonated : Beverages
+16222 : Soymilk (all flavors), unsweetened, with added calcium, vitamins A and D
+http://api.nal.usda.gov/ndb/reports/?ndbno=16222&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+16222 : Soymilk (all flavors), unsweetened, with added calcium, vitamins A and D : Legumes and Legume Products
+25071 : Rice crackers
+http://api.nal.usda.gov/ndb/reports/?ndbno=25071&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+25071 : Rice crackers : Snacks
+13337 : Beef, variety meats and by-products, thymus, raw
+http://api.nal.usda.gov/ndb/reports/?ndbno=13337&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+13337 : Beef, variety meats and by-products, thymus, raw : Beef Products
+42158 : Creamy dressing, made with sour cream and/or buttermilk and oil, reduced calorie, cholesterol-free
+http://api.nal.usda.gov/ndb/reports/?ndbno=42158&type=f&format=json&api_key=F1aPLDn8zX7K0TRlxboPlODCxW8FUZZdbCYTPWD7
+42158 : Creamy dressing, made with sour cream and/or buttermilk and oil, reduced calorie, cholesterol-free : Fats and Oils

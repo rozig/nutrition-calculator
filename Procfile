@@ -1,0 +1,1 @@
+web: gunicorn DairyNutrition.wsgi --log-file -
