@@ -12,19 +12,19 @@ def register_view(request):
 		form = RegistrationForm(request.POST)
 		if form.is_valid():
 			user = form.save()
-			print request.POST.get('age')
 			height = float(request.POST.get("height"))/100
 			weight = float(request.POST.get("weight"))
-			age = int(request.POST.get("age"))
+			# age = int(request.POST.get("age"))
+			print request.POST.is_fat
 			gender = request.POST.get("gender")
 			bmi = round(weight / (height * height), 2)
 			is_fat = request.POST.get("is_fat");
 			weight_diff = request.POST.get("weight_diff")
 			bmr = 0
-			if(int(gender) == 1):
-				bmr = (weight*9.6) + (height*1.8*100) - (age * 4.7) + 655
-			elif(int(gender) == 2):
-				bmr = (weight*13.7) + (height*5*100) - (age * 6.8) + 66
+			# if(int(gender) == 1):
+			# 	bmr = (weight*9.6) + (height*1.8*100) - (age * 4.7) + 655
+			# elif(int(gender) == 2):
+			# 	bmr = (weight*13.7) + (height*5*100) - (age * 6.8) + 66
 			return render(request, 'registration/registration_successful.html', {'user':user,'bmi': bmi, 'bmr': bmr, 'is_fat': is_fat, 'weight_diff': weight_diff})
 	else:
 		form = RegistrationForm()

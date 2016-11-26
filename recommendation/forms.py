@@ -34,7 +34,6 @@ class RegistrationForm(forms.ModelForm):
 		else:
 			user_modified.is_fat = 0
 			user_modified.weight_diff = round(bmr, 2)
-		user_modified.set_age(age)
 		user_modified.set_password(self.cleaned_data['password'])
 		if commit:
 			user_modified.save()

@@ -16,8 +16,8 @@ class User(AbstractUser):
 	is_fat = models.IntegerField(default='0')
 	weight_diff = models.FloatField(default='0')
 	activity_level = models.FloatField(default='0')
+	age = models.IntegerField(default='0')
 	favourite_food_group = models.ManyToManyField(Food_Groups)
-	age = models.IntegerField()
 
 	def set_age(self, value):
 		self.age = value
