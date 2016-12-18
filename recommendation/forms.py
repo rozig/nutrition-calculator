@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from django import forms
 from django.contrib.auth.forms import AuthenticationForm
 from .models import User, Food_Groups
@@ -7,7 +8,7 @@ class RegistrationForm(forms.ModelForm):
 	email = forms.EmailField()
 	password = forms.CharField(widget=forms.widgets.PasswordInput, label="Password")
 	password_repeat = forms.CharField(widget=forms.widgets.PasswordInput, label="Password (Again)")
-	gender = forms.ChoiceField(choices=((1, ("Male")), (2, ("Female"))), required=True)
+	gender = forms.ChoiceField(choices=((1, (u"Эрэгтэй")), (2, (u"Эмэгтэй"))), required=True)
 	favourite_food_group = forms.ModelMultipleChoiceField(widget = forms.CheckboxSelectMultiple(), queryset=Food_Groups.objects.all(), required=True)
 
 	class Meta:

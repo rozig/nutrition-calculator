@@ -2,39 +2,118 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>{% block title %}Dairy Nutrition{% endblock %}</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="{% static 'recommendation/css/bootstrap.min.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'recommendation/css/style.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'recommendation/css/font-awesome.min.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'recommendation/css/jquery-ui.min.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'recommendation/css/jquery-ui.structure.min.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'recommendation/css/jquery-ui.theme.min.css' %}">
-	{% block stylesheets %}{% endblock %}
+    <title>{% block title %}Dairy Nutrition{% endblock %}</title>
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="{% static 'recommendation/bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+    <!-- Ionicons -->
+    <link rel="stylesheet" type="text/css" href="{% static 'recommendation/bower_components/Ionicons/css/ionicons.min.css' %}">
+    <!-- Custom style -->
+    <link rel="stylesheet" type="text/css" href="{% static 'recommendation/css/style.css' %}">
+    {% block stylesheets %}{% endblock %}
 </head>
 <body>
-	<video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
-		<source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
-	</video>
-	<div id="main">
-		<div class="container">
-			<nav>
-				<a href="{% url 'home' %}">Home</a>
-				<a class="nav-right-btn" href="{% url 'login' %}">Login</a>
-				<a class="nav-right-btn" href="{% url 'register' %}">Register</a>
-			</nav>
-			<div class="content">
-				{% block body %}{% endblock %}
-			</div>
-			<div class="footer">
-				Copyright &copy; 2016.
-			</div>
-		</div>
-	</div>
-	<script src="{% static 'recommendation/js/jquery-3.1.1.min.js' %}"></script>
-	<script src="{% static 'recommendation/js/bootstrap.min.js' %}"></script>
-	<script src="{% static 'recommendation/js/jquery-ui.min.js' %}"></script>
-	<script src="{% static 'recommendation/js/script.js' %}"></script>
-	{% block javascripts %}{% endblock %}
+    <div id="main">
+        <div class="side-left">
+            <div class="profile-info">
+                <div class="cover">
+                    <img class="profile-cover" src="{% static 'recommendation/images/cover.jpg' %}" />
+                    <div class="gradient"></div>
+                </div>
+                <div class="info">
+                    <span class="full-name">{{ user.first_name }}</span>
+                    <p class="profile-weight">
+                        Жин:
+                        <span class="weight-value">
+                            70кг
+                        </span>
+                    </p>
+                    <p class="profile-height">
+                        Өндөр:
+                        <span class="height-value">
+                            1.7м
+                        </span>
+                    </p>
+                </div>
+                <img class="profile-img" src="{% static 'recommendation/images/profile.jpg' %}"/>
+            </div>
+            <div class="side-menu">
+                <ul class="main-menu">
+                    <li class="main-menu-item">
+                        <a href="#">
+                            <i class="icon ion-ios-contact-outline"></i>
+                            Миний хэсэг
+                        </a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="#">
+                            <i class="icon ion-ios-paper"></i>
+                            Шинээр нэмэгдсэн
+                        </a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="#">
+                            <i class="icon ion-android-favorite"></i>
+                            Дуртай хоол
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer">
+                <p class="copyright">
+                    Dairy Nutrition хэрэглүүр. 2016 он.
+                </p>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="container">
+                {% block body %}{% endblock %}
+            </div>
+        </div>
+        <div class="side-right">
+            <div class="logo">
+                <img src="{% static 'recommendation/images/logo.jpg' %}">
+            </div>
+            <ul class="user-menu">
+                <li class="user-menu-item">
+                    <a href="#">
+                        <i class="icon ion-ios-body right-side-icon"></i>
+                        Хэрэглээ
+                    </a>
+                </li>
+                <li class="user-menu-item">
+                    <a href="#">
+                        <i class="icon ion-arrow-graph-up-right right-side-icon"></i>
+                        Үзүүлэлт
+                    </a>
+                </li>
+                <li class="user-menu-item">
+                    <a href="#">
+                        <i class="icon ion-clipboard right-side-icon"></i>
+                        Жор нэмэх
+                    </a>
+                </li>
+                <li class="user-menu-item">
+                    <a href="#">
+                        <i class="icon ion-ios-cog right-side-icon"></i>
+                        Тохиргоо
+                    </a>
+                </li>
+                <li class="user-menu-item">
+                    <a href="{% url 'logout' %}">
+                        <i class="icon ion-log-out right-side-icon"></i>
+                        Гарах
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- JQuery -->
+    <script src="{% static 'recommendation/bower_components/jquery/dist/jquery.min.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'recommendation/bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <!-- Custom script -->
+    <script src="{% static 'recommendation/js/script.js' %}"></script>
+    {% block javascripts %}{% endblock %}
 </body>
 </html>

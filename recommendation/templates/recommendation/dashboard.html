@@ -1,58 +1,295 @@
 {% extends 'recommendation/base.html' %}
 {% load staticfiles %}
-{% block tilte %}Food Recommendation{% endblock %}
-{% block stylesheets %}
-<style type="text/css"></style>
-{% endblock %}
+{% block tilte %}Шинээр нэмэгдсэн{% endblock %}
+{% block stylesheets %}{% endblock %}
 {% block body %}
-	<div class="food-container">
-		<!-- <div class="counter">
-			{{ foods|length }}
-		</div> -->
-		{% for food in foods %}
-		<div class="food-item">
-			<div class="food-card" data-id="{{ food.id }}">
-				{% if food.image %}
-					<img src="">
-				{% else %}
-					<img src="{% static 'recommendation/images/no-image-found.jpg' %}">
-				{% endif %}
-				<p class="food-name">{{ food.name }}</p>
-			</div>
-			<div class="card-buttons">
-				<span class="btn btn-dislike"><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
-				<span class="btn btn-like"><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
-				<input id="hidden-status" type="hidden" name="status" value=""/>
-			</div>
-		</div>
-		{% endfor %}
-	</div>
-	<script type="text/javascript">
-		$(function() {
-			$(".btn-like").on("click", function() {
-				$(this).parent().parent().fadeOut();
-				$("#hidden-status").val(1);
-				feedback();
-			});
-			$(".btn-dislike").on("click", function() {
-				$(this).parent().parent().fadeOut();
-				$("#hidden-status").val(2);
-				feedback();
-			});
-			function feedback() {
-			    $.ajax({
-			        url : "/dashboard/",
-			        type : "POST",
-			        data : { status : $('#hidden-status').val(), food_id : $('.food-card').data('id') },
-			        success : function(json) {
-			            $('#hidden-status').val('');
-			            console.log(json);
-			            console.log("success");
-			        }
-			    });
-			};
-		});
-	</script>
+	<div class="feed-item">
+        <div class="item-thumb">
+            <img class="item-img" src="{% static 'recommendation/images/thumb.jpg' %}"/>
+            <div class="gradient"></div>
+            <div class="author-img">
+                <a href="#">
+                    <img class="author-profile-img" src="{% static 'recommendation/images/profile.jpg' %}"/>
+                </a>
+            </div>
+            <a href="#">
+                <span class="item-category">Цагаан хоол</span>
+            </a>
+            <a href="#">
+                <span class="item-date">12-р сар 06</span>
+            </a>
+            <div class="item-tags">
+                <a href="#">
+                    <span class="item-tag">Жор</span>
+                </a>
+            </div>
+            <a class="item-title" href="#">
+                Lorem ipsum
+            </a>
+            <div class="item-actions">
+                <span class="love-it">
+                    <i class="icon ion-ios-heart-outline"></i>
+                    Love it!
+                </span>
+            </div>
+        </div>
+        <div class="item-brief-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="item-meta">
+            <div class="col-40">
+                <a class="meta-link" href="#">
+                    <span class="author-name">
+                        <i class="icon ion-person"></i>
+                        Бат-Эрдэнэ
+                    </span>
+                </a>
+            </div>
+            <div class="col-60 align-right">
+                <span class="item-views">
+                    <i class="icon ion-eye"></i>
+                    123
+                </span>
+                <a class="meta-link" href="#">
+                    <span class="item-love-count">
+                        <i class="icon ion-heart"></i>
+                        25
+                    </span>
+                </a>
+                <a class="meta-link" href="#">
+                    <span class="item-comment-count">
+                        <i class="icon ion-ios-chatbubble"></i>
+                        7
+                    </span>
+                </a>
+                <a class="meta-link" href="#">
+                    <span class="share">
+                        <i class="icon ion-ios-more-outline"></i>
+                    </span>
+                </a>
+                <div class="socials">
+                    <a class="link-fb">Facebook</a>
+                    <a class="link-tw">Twitter</a>
+                    <a class="link-pin">Pinterest</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feed-item">
+        <div class="item-thumb">
+            <img class="item-img" src="{% static 'recommendation/images/thumb.jpg' %}"/>
+            <div class="gradient"></div>
+            <div class="author-img">
+                <a href="#">
+                    <img class="author-profile-img" src="{% static 'recommendation/images/profile.jpg' %}"/>
+                </a>
+            </div>
+            <a href="#">
+                <span class="item-category">Цагаан хоол</span>
+            </a>
+            <a href="#">
+                <span class="item-date">12-р сар 06</span>
+            </a>
+            <div class="item-tags">
+                <a href="#">
+                    <span class="item-tag">Жор</span>
+                </a>
+            </div>
+            <a class="item-title" href="#">
+                Lorem ipsum
+            </a>
+            <div class="item-actions">
+                <span class="love-it">
+                    <i class="icon ion-ios-heart-outline"></i>
+                    Love it!
+                </span>
+            </div>
+        </div>
+        <div class="item-brief-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="item-meta">
+            <div class="col-40">
+                <a class="meta-link" href="#">
+                    <span class="author-name">
+                        <i class="icon ion-person"></i>
+                        Бат-Эрдэнэ
+                    </span>
+                </a>
+            </div>
+            <div class="col-60 align-right">
+                <span class="item-views">
+                    <i class="icon ion-eye"></i>
+                    123
+                </span>
+                <a class="meta-link" href="#">
+                    <span class="item-love-count">
+                        <i class="icon ion-heart"></i>
+                        25
+                    </span>
+                </a>
+                <a class="meta-link" href="#">
+                    <span class="item-comment-count">
+                        <i class="icon ion-ios-chatbubble"></i>
+                        7
+                    </span>
+                </a>
+                <a class="meta-link" href="#">
+                    <span class="share">
+                        <i class="icon ion-ios-more-outline"></i>
+                    </span>
+                </a>
+                <div class="socials">
+                    <a class="link-fb">Facebook</a>
+                    <a class="link-tw">Twitter</a>
+                    <a class="link-pin">Pinterest</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feed-item">
+        <div class="item-thumb">
+            <img class="item-img" src="{% static 'recommendation/images/thumb.jpg' %}"/>
+            <div class="gradient"></div>
+            <div class="author-img">
+                <a href="#">
+                    <img class="author-profile-img" src="{% static 'recommendation/images/profile.jpg' %}"/>
+                </a>
+            </div>
+            <a href="#">
+                <span class="item-category">Цагаан хоол</span>
+            </a>
+            <a href="#">
+                <span class="item-date">12-р сар 06</span>
+            </a>
+            <div class="item-tags">
+                <a href="#">
+                    <span class="item-tag">Жор</span>
+                </a>
+            </div>
+            <a class="item-title" href="#">
+                Lorem ipsum
+            </a>
+            <div class="item-actions">
+                <span class="love-it">
+                    <i class="icon ion-ios-heart-outline"></i>
+                    Love it!
+                </span>
+            </div>
+        </div>
+        <div class="item-brief-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="item-meta">
+            <div class="col-40">
+                <a class="meta-link" href="#">
+                    <span class="author-name">
+                        <i class="icon ion-person"></i>
+                        Бат-Эрдэнэ
+                    </span>
+                </a>
+            </div>
+            <div class="col-60 align-right">
+                <span class="item-views">
+                    <i class="icon ion-eye"></i>
+                    123
+                </span>
+                <a class="meta-link" href="#">
+                    <span class="item-love-count">
+                        <i class="icon ion-heart"></i>
+                        25
+                    </span>
+                </a>
+                <a class="meta-link" href="#">
+                    <span class="item-comment-count">
+                        <i class="icon ion-ios-chatbubble"></i>
+                        7
+                    </span>
+                </a>
+                <a class="meta-link" href="#">
+                    <span class="share">
+                        <i class="icon ion-ios-more-outline"></i>
+                    </span>
+                </a>
+                <div class="socials">
+                    <a class="link-fb">Facebook</a>
+                    <a class="link-tw">Twitter</a>
+                    <a class="link-pin">Pinterest</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feed-item">
+        <div class="item-thumb">
+            <img class="item-img" src="{% static 'recommendation/images/thumb.jpg' %}"/>
+            <div class="gradient"></div>
+            <div class="author-img">
+                <a href="#">
+                    <img class="author-profile-img" src="{% static 'recommendation/images/profile.jpg' %}"/>
+                </a>
+            </div>
+            <a href="#">
+                <span class="item-category">Цагаан хоол</span>
+            </a>
+            <a href="#">
+                <span class="item-date">12-р сар 06</span>
+            </a>
+            <div class="item-tags">
+                <a href="#">
+                    <span class="item-tag">Жор</span>
+                </a>
+            </div>
+            <a class="item-title" href="#">
+                Lorem ipsum
+            </a>
+            <div class="item-actions">
+                <span class="love-it">
+                    <i class="icon ion-ios-heart-outline"></i>
+                    Love it!
+                </span>
+            </div>
+        </div>
+        <div class="item-brief-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="item-meta">
+            <div class="col-40">
+                <a class="meta-link" href="#">
+                    <span class="author-name">
+                        <i class="icon ion-person"></i>
+                        Бат-Эрдэнэ
+                    </span>
+                </a>
+            </div>
+            <div class="col-60 align-right">
+                <span class="item-views">
+                    <i class="icon ion-eye"></i>
+                    123
+                </span>
+                <a class="meta-link" href="#">
+                    <span class="item-love-count">
+                        <i class="icon ion-heart"></i>
+                        25
+                    </span>
+                </a>
+                <a class="meta-link" href="#">
+                    <span class="item-comment-count">
+                        <i class="icon ion-ios-chatbubble"></i>
+                        7
+                    </span>
+                </a>
+                <a class="meta-link" href="#">
+                    <span class="share">
+                        <i class="icon ion-ios-more-outline"></i>
+                    </span>
+                </a>
+                <div class="socials">
+                    <a class="link-fb">Facebook</a>
+                    <a class="link-tw">Twitter</a>
+                    <a class="link-pin">Pinterest</a>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
-{% block javascripts %}
-{% endblock %}
+{% block javascripts %}{% endblock %}
