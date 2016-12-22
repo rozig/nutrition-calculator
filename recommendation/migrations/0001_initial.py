@@ -2,9 +2,10 @@
 from __future__ import unicode_literals
 
 from django.db import models, migrations
-import django.utils.timezone
-import django.core.validators
 import django.contrib.auth.models
+import django.utils.timezone
+from django.conf import settings
+import django.core.validators
 
 
 class Migration(migrations.Migration):
@@ -28,10 +29,14 @@ class Migration(migrations.Migration):
                 ('is_staff', models.BooleanField(default=False, help_text='Designates whether the user can log into this admin site.', verbose_name='staff status')),
                 ('is_active', models.BooleanField(default=True, help_text='Designates whether this user should be treated as active. Unselect this instead of deleting accounts.', verbose_name='active')),
                 ('date_joined', models.DateTimeField(default=django.utils.timezone.now, verbose_name='date joined')),
-                ('birth_date', models.DateField()),
+                ('birth_date', models.DateField(default=b'1970-01-01')),
                 ('height', models.FloatField(null=True)),
                 ('weight', models.FloatField(null=True)),
-                ('gender', models.NullBooleanField()),
+                ('gender', models.IntegerField(default=b'1')),
+                ('is_fat', models.IntegerField(default=b'0')),
+                ('weight_diff', models.FloatField(default=b'0')),
+                ('activity_level', models.FloatField(default=b'0')),
+                ('age', models.IntegerField(default=b'0')),
             ],
             options={
                 'abstract': False,
@@ -43,23 +48,53 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.CreateModel(
-            name='Food_Groups',
+            name='Food',
             fields=[
-                ('id', models.CharField(max_length=20, serialize=False, primary_key=True)),
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('name', models.CharField(max_length=200)),
+                ('total_calories', models.FloatField(null=True)),
+                ('image', models.CharField(max_length=255)),
+            ],
+        ),
+        migrations.CreateModel(
+            name='Food_Group',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(max_length=200)),
             ],
         ),
         migrations.CreateModel(
-            name='Foods',
+            name='Food_Nutrition',
             fields=[
-                ('id', models.CharField(max_length=20, serialize=False, primary_key=True)),
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(max_length=200)),
+                ('unit', models.CharField(max_length=20)),
+                ('value', models.FloatField()),
             ],
+        ),
+        migrations.CreateModel(
+            name='Machine_Data',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('food', models.CharField(max_length=20)),
+                ('status', models.IntegerField(default=0)),
+                ('user', models.ForeignKey(to=settings.AUTH_USER_MODEL)),
+            ],
+        ),
+        migrations.AddField(
+            model_name='food',
+            name='group',
+            field=models.ForeignKey(to='recommendation.Food_Group'),
+        ),
+        migrations.AddField(
+            model_name='food',
+            name='nutrients',
+            field=models.ManyToManyField(to='recommendation.Food_Nutrition'),
         ),
         migrations.AddField(
             model_name='user',
             name='favourite_food_group',
-            field=models.ManyToManyField(to='recommendation.Food_Groups'),
+            field=models.ManyToManyField(to='recommendation.Food_Group'),
         ),
         migrations.AddField(
             model_name='user',

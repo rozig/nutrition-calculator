@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
-
 from django.shortcuts import render, redirect, render_to_response
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login
-from django.template import RequestContext
 from django.http import HttpResponse
 
 from datetime import date
 
-from .models import User, Foods, Machine_Data
+from .models import User, Food, Machine_Data, Food_Nutrition
 
 def index(request):
 	if request.user.is_authenticated():
@@ -18,7 +16,12 @@ def index(request):
 
 @login_required(login_url='/login/')
 def dashboard_view(request):
-	return render_to_response(request, "recommendation/dashboard.html", {"user": request.user}, context_instance=RequestContext(request))
+	foods = Food.objects.all()
+	nutrients = Food_Nutrition.objects.all()
+	for i in foods:
+		for j in nutrients:
+			print i
+	return render(request, "recommendation/dashboard.html", {"user": request.user})
 
 def login_view(request):
 	error = ""
@@ -100,11 +103,10 @@ def register_view(request):
 		else:
 			return render(request, "authentication/register.html")
 
-def food_view(request):
-	if request.POST:
-		form = FoodInsertionForm(request.POST)
-		if form.is_valid():
-			food = form.save()
+# def food_view(request):
+# 	foods = 
+# 	return render(request, "recommendation/dashboard.html", {"user": request.user})
+	
 
 # def add_food(request):
 # 	if request.method == "POST":
