@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from . import views
+from . import views, api
 import django.contrib.auth.views as auth_views
 
 urlpatterns = [
@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^register/$', views.register_view, name='register'),
     # url(r'^register-successful/$', views.register_successful, name='register_successful'),
     url(r'^dashboard/$', views.dashboard_view, name='dashboard'),
+    url(r'^api/login/$', api.login_api, name="login_api"),
 ]
