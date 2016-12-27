@@ -11,6 +11,9 @@ $side-bars-bg-color-accent: #393939;
 $item-meta-bg: #8C73A5;
 $item-meta-hover-bg: #705C84;
 
+$purple:#8C73A5;
+$purple-accent:#9881AE;
+
 // Font Variables
 $main-font: 'Roboto Condensed', sans-serif; 
 
@@ -33,13 +36,17 @@ a {
     display: block;
     background-color:$side-bars-bg-color;
 }
+.active,.active:hover {
+    background-color:$purple !important;
+    border-left:5px solid $purple-accent !important;
+}
 .gradient {
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    background-image:linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 100%);
+    background-image:linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.8) 100%);
 }
 .col-60 {
     width:60%;
@@ -159,6 +166,13 @@ a {
         list-style:none;
         margin:0;
     }
+    .user-menu-item {
+        border-left:5px solid $side-bars-bg-color-accent;
+        transition:.5s;
+    }
+    .user-menu-item:hover {
+        background-color: $side-bars-bg-color-accent;
+    }
     .user-menu-item a {
         padding: 10px 0;
         color: $side-bars-text-color;
@@ -170,7 +184,6 @@ a {
     }
     .user-menu-item a:hover {
         text-decoration:none;
-        background-color: $side-bars-bg-color-accent;
     }
     .user-menu-item a + .tooltip.right {
         padding:0;
@@ -181,13 +194,68 @@ a {
     }
 }
 .main-content{
-    width: 1010px;
+    width:calc(100% - 340px);
     display: block;
     position: absolute;
     top: 0px;
     left: 260px;
 }
 .main-content {
+    .profile-container {
+        width:100%;
+        position:relative;
+        .header {
+            position:relative;
+            height:250px;
+            width:100%;
+            .cover {
+                height:100%;
+                width:100%;
+            }
+            .profile-info {
+                position:absolute;
+                width:100%;
+                height:100px;
+                bottom:0;
+                left:0;
+                z-index:3;
+                background-color:rgba(0, 0, 0, 0.6);
+                .profile-img {
+                    position:absolute;
+                    bottom:35px;
+                    left:35px;
+                    width:140px;
+                    height:140px;
+                    border:4px solid $primary-text-color;
+                    border-radius:3px;
+                }
+                .details {
+                    margin-left:200px;
+                    margin-top:10px;
+                    .username {
+                        font-size:18px;
+                        font-weight:bold;
+                        color:$primary-text-color;
+                    }
+                }
+            }
+            .overlay {
+                position:absolute;
+                top:0;
+                left:0;
+                height:100%;
+                width:100%;
+                background-image:url('../images/pattern.png');
+                background-position:top left;
+                background-repeat:repeat;
+                z-index:2;
+            }
+        }
+        .user-menu {
+            background-color:$side-bars-bg-color;
+            height:80px;
+        }
+    }
     .container {
         width:100%;
         position: relative;

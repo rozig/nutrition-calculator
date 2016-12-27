@@ -3,10 +3,11 @@ from django.shortcuts import render, redirect, render_to_response
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponse
+from django.core.validators import validate_email
 
-from datetime import date
+from datetime import datetime, date
 
-from .models import User, Food, Machine_Data, Food_Nutrition
+from .models import User, Food, Machine_Data, Food_Nutrition, Food_Group
 
 def index(request):
 	if request.user.is_authenticated():
@@ -16,12 +17,9 @@ def index(request):
 
 @login_required(login_url='/login/')
 def dashboard_view(request):
-	foods = Food.objects.all()
+	foods = Food.objects.order_by("-added_date")[:10]
 	nutrients = Food_Nutrition.objects.all()
-	for i in foods:
-		for j in nutrients:
-			print i
-	return render(request, "recommendation/dashboard.html", {"user": request.user})
+	return render(request, "recommendation/dashboard.html", {"user": request.user, "foods": foods})
 
 def login_view(request):
 	error = ""
@@ -52,22 +50,22 @@ def register_view(request):
 	height = weight = weight_diff = activity_level = 0.0
 	gender = is_fat = age = bmr = bmi = 0
 	if request.POST:
+		mail_address = request.POST["email"]
 		username = request.POST["username"]
-		firstname = request.POST["firstname"]
-		lastname = request.POST["lastname"]
 		password = request.POST["password"]
-		password_repeat = request.POST["password_repeat"]
-		mail_address = request.POST["mail_address"]
-		height = request.POST["height"]/100
-		weight = request.POST["weight"]
-		activity_level = request.POST["activity_level"]
-		gender = request.POST["gender"]
-		birth_date = request.POST["birth_date"]
+		password_repeat = request.POST["repeat-password"]
+		lastname = request.POST["last-name"]
+		firstname = request.POST["first-name"]
+		gender = request.POST["gender"] == "male" and 1 or 2
+		birth_date = datetime.strptime(request.POST["birth-date"], "%Y-%m-%d").date()
+		height = float(request.POST["height"])/100
+		weight = float(request.POST["weight"])
+		activity_level = request.POST["activity-level"]
 
 		if not username or not firstname or not lastname or not password or not password_repeat or not mail_address or not height or not weight or not activity_level or not gender:
 			error = u"Та шаардлагатай бүх талбарыг бөглөнө үү!"
 			return render(request, "authentication/register.html", {"error": error})
-		elif len(username) < 6:
+		elif len(username) < 5:
 			error = u"Хэрэглэгчийн нэр хамгийн багадаа 5 тэмдэгттэй байх ёстой!"
 			return render(request, "authentication/register.html", {"error": error})
 		elif password != password_repeat:
@@ -94,19 +92,43 @@ def register_view(request):
 				is_fat = 0
 				weight_diff = round(bmr, 2)
 
-			user = User.objects.create_user(username = username, first_name = firstname, last_name = lastname, email = mail_address, gender = gender, is_superuser = False, is_staff = False, is_active = True, date_joined = date.today(), birth_date = birth_date, height = height, weight = weight, is_fat = is_fat, weight_diff = weight_diff, activity_level = activity_level, age = age, password = password)
+			user = User.objects.create_user(username = username, first_name = firstname, last_name = lastname, email = mail_address, gender = gender, birth_date = birth_date, height = height, weight = weight, is_fat = is_fat, weight_diff = weight_diff, activity_level = activity_level, age = age, password = password)
 
-			return render(request, 'authentication/registration_successful.html')
+			return render(request, 'authentication/registration_successful.html', {"bmi": bmi, "bmr": bmr, "is_fat": is_fat, "weight_diff": weight_diff})
 	else:
 		if request.user.is_authenticated():
 			return redirect(dashboard_view)
 		else:
-			return render(request, "authentication/register.html")
+			return render(request, "authentication/register.html", {"error": error})
 
-# def food_view(request):
-# 	foods = 
-# 	return render(request, "recommendation/dashboard.html", {"user": request.user})
-	
+def profile_detail_view(request, username):
+	try:
+		user = User.objects.get(username = username)
+		return render(request, "recommendation/profile.html", {"user_info": user})
+	except:
+		return render(request, "error/404.html")
+
+def food_group_view(request, group_id):
+	try:
+		group = Food_Group.objects.get(pk = group_id)
+		foods = group.foods.all()
+		return render(request, "recommendation/food_group_detail.html", {"group": group, "foods": foods})
+	except:
+		return render(request, "error/404.html")
+
+def food_detail_view(request, food_id):
+	try:
+		food = Food.objects.get(pk=food_id)
+		return render(request, "recommendation/food_detail.html", {"food": food})
+	except:
+		return render(request, "error/404.html")
+
+def favourite_food_list(request):
+	if request.user.is_authenticated():
+		user_id = request.user.id
+		foods = Food.objects.filter(user__id = user_id)
+		print foods
+		return render(request, "recommendation/favourite_foods.html", {"foods": foods})
 
 # def add_food(request):
 # 	if request.method == "POST":
@@ -116,7 +138,7 @@ def register_view(request):
 # 		
 def check_mail(mail):
 	try:
-		validate_email(mail_address)
+		validate_email(mail)
 		return True
 	except:
 		return False

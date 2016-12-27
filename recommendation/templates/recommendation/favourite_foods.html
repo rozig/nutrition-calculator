@@ -1,0 +1,16 @@
+{% extends 'recommendation/base.html' %}
+{% load staticfiles %}
+{% block tilte %}Дуртай хоолнууд{% endblock %}
+{% block stylesheets %}{% endblock %}
+{% block body %}
+<div class="profile-container">
+    {% foods|length > 0 %}
+        {% for food in foods %}
+            {{ food.name }}
+        {% endfor %}
+    {% else %}
+        Одоогоор дуртай хоол байхгүй байна.
+    {% endif %}
+</div>
+{% endblock %}
+{% block javascripts %}{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'recommendation/base.html' %}
+{% load staticfiles %}
+{% block tilte %}{{ user_info.first_name }}{% endblock %}
+{% block stylesheets %}{% endblock %}
+{% block body %}
+<div class="profile-container">
+    <div class="header">
+        <img class="cover" src="{% static 'recommendation/images/cover.jpg' %}" />
+        <div class="profile-info">
+            <img class="profile-img" src="{{ user_info.avatar.url }}" />
+            <div class="details">
+                <span class="username">@{{ user_info.username }}</span>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <div class="user-menu">
+        
+    </div>
+    <div class="profile-content">
+        <div class="row">
+            <div class="col-md-9">
+                
+            </div>
+            <div class="col-md-3">
+                
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block javascripts %}{% endblock %}

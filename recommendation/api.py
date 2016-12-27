@@ -9,7 +9,7 @@ from datetime import date
 
 from .models import User, Food, Machine_Data, Food_Nutrition
 
-@api_view(["POST"])
+
 def login_api(request):
     error = ""
     username = password = ""

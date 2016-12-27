@@ -14,16 +14,6 @@ class Food_Group(models.Model):
 
 	def __unicode__(self):
 		return u'%s' % self.name
-	
-class Food(models.Model):
-	name = models.CharField(max_length = 200)
-	total_calories = models.FloatField(null = True)
-	nutrients = models.ManyToManyField(Food_Nutrition)
-	image = models.CharField(max_length=255)
-	group = models.ForeignKey(Food_Group)
-
-	def __unicode__(self):
-		return u'%s' % self.name
 
 class User(AbstractUser):
 	birth_date = models.DateField(auto_now = False, default = '1970-01-01')
@@ -33,11 +23,32 @@ class User(AbstractUser):
 	is_fat = models.IntegerField(default = '0')
 	weight_diff = models.FloatField(default = '0')
 	activity_level = models.FloatField(default = '0')
+	avatar = models.FileField(upload_to="avatars/")
 	age = models.IntegerField(default = '0')
 	favourite_food_group = models.ManyToManyField(Food_Group)
 
 	def set_age(self, value):
 		self.age = value
+	
+class Food(models.Model):
+	name = models.CharField(max_length = 200)
+	total_calories = models.FloatField(null = True)
+	nutrients = models.ManyToManyField(Food_Nutrition)
+	image = models.FileField(upload_to = "foods/")
+	description = models.TextField()
+	group = models.ForeignKey(Food_Group, related_name = "foods")
+	chief = models.ForeignKey(User, related_name = "foods")
+	lovers = models.ManyToManyField(User, through='Food_and_User')
+	loves = models.IntegerField(default = "0")
+	added_date = models.DateField(auto_now = True)
+
+	def __unicode__(self):
+		return u'%s' % self.name
+
+class Food_and_User(models.Model):
+	user = models.ForeignKey(User)
+	food = models.ForeignKey(Food)
+	is_favourite = models.BooleanField()
 	
 class Machine_Data(models.Model):
 	user = models.ForeignKey(User)

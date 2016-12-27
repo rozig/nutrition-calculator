@@ -1,0 +1,13 @@
+{% extends 'recommendation/base.html' %}
+{% load staticfiles %}
+{% block tilte %}{{ group.name }}{% endblock %}
+{% block stylesheets %}{% endblock %}
+{% block body %}
+<div class="profile-container">
+    {{ group.name }}
+    {% for food in foods %}
+        {{ food.name }}
+    {% endfor %}
+</div>
+{% endblock %}
+{% block javascripts %}{% endblock %}

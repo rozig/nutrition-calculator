@@ -17,7 +17,7 @@
         <div class="side-left">
             <div class="profile-info">
                 <div class="cover">
-                    <img class="profile-cover" src="{% static 'recommendation/images/cover.jpg' %}" />
+                    <img class="profile-cover" src="{{ user.avatar.url }}" />
                     <div class="gradient"></div>
                 </div>
                 <div class="info">
@@ -25,13 +25,13 @@
                     <p class="profile-weight">
                         Жин:
                         <span class="weight-value">
-                            {{ user.weight }}
+                            {{ user.weight }} кг
                         </span>
                     </p>
                     <p class="profile-height">
                         Өндөр:
                         <span class="height-value">
-                            {{ user.height }}
+                            {{ user.height }} м
                         </span>
                     </p>
                 </div>
@@ -40,19 +40,19 @@
             <div class="side-menu">
                 <ul class="main-menu">
                     <li class="main-menu-item">
-                        <a href="#">
+                        <a href="{% url 'profile_detail' user.username %}">
                             <i class="icon ion-ios-contact-outline"></i>
                             Миний хэсэг
                         </a>
                     </li>
                     <li class="main-menu-item">
-                        <a href="#">
+                        <a href="{% url 'dashboard' %}">
                             <i class="icon ion-ios-paper"></i>
                             Шинээр нэмэгдсэн
                         </a>
                     </li>
                     <li class="main-menu-item">
-                        <a href="#">
+                        <a href="{% url 'favourite_food_list' %}">
                             <i class="icon ion-android-favorite"></i>
                             Дуртай хоол
                         </a>
@@ -66,15 +66,16 @@
             </div>
         </div>
         <div class="main-content">
-            <div class="container">
-                {% block body %}{% endblock %}
-            </div>
+            {% block body %}{% endblock %}
         </div>
         <div class="side-right">
-            <div class="logo">
-                <img src="{% static 'recommendation/images/logo.jpg' %}">
-            </div>
             <ul class="user-menu">
+                <li class="user-menu-item active">
+                    <a href="{% url 'dashboard' %}">
+                        <i class="icon ion-ios-home right-side-icon"></i>
+                        Нүүр
+                    </a>
+                </li>
                 <li class="user-menu-item">
                     <a href="#">
                         <i class="icon ion-ios-body right-side-icon"></i>
