@@ -1,0 +1,21 @@
+{% extends 'recommendation/base.html' %}
+{% load staticfiles %}
+{% block tilte %}Хэрэглээ бүртгэх{% endblock %}
+{% block stylesheets %}{% endblock %}
+{% block body %}
+<div class="container">
+    <h5>Өдөрт хэрэглэсэн хэрэглээг бүртгэх</h5>
+    <form id="select-activity" method="POST" action="{% url 'add_activity' %}">
+        {% csrf_token %}
+        <div class="form-group">
+            <select id="select-panel" class="form-control" name="food">
+                {% for food in foods %}
+                <option value="{{ food.id }}">{{ food.name }} - {{ food.total_calories }}ккал</option>
+                {% endfor %}
+            </select>
+            <button type="submit" class="form-control">Бүртгэх</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
+{% block javascripts %}{% endblock %}

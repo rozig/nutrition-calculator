@@ -46,7 +46,7 @@
                         </a>
                     </li>
                     <li class="main-menu-item">
-                        <a href="{% url 'dashboard' %}">
+                        <a href="{% url 'feed' %}">
                             <i class="icon ion-ios-paper"></i>
                             Шинээр нэмэгдсэн
                         </a>
@@ -77,19 +77,19 @@
                     </a>
                 </li>
                 <li class="user-menu-item">
-                    <a href="#">
+                    <a href="{% url 'add_activity' %}">
                         <i class="icon ion-ios-body right-side-icon"></i>
                         Хэрэглээ
                     </a>
                 </li>
                 <li class="user-menu-item">
-                    <a href="#">
+                    <a href="{% url 'get_statistic' %}">
                         <i class="icon ion-arrow-graph-up-right right-side-icon"></i>
                         Үзүүлэлт
                     </a>
                 </li>
                 <li class="user-menu-item">
-                    <a href="#">
+                    <a href="{% url 'add_food' %}">
                         <i class="icon ion-clipboard right-side-icon"></i>
                         Жор нэмэх
                     </a>

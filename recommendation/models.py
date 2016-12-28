@@ -25,6 +25,7 @@ class User(AbstractUser):
 	activity_level = models.FloatField(default = '0')
 	avatar = models.FileField(upload_to="avatars/")
 	age = models.IntegerField(default = '0')
+	daily_calory = models.FloatField()
 	favourite_food_group = models.ManyToManyField(Food_Group)
 
 	def set_age(self, value):

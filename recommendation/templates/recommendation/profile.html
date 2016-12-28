@@ -9,7 +9,20 @@
         <div class="profile-info">
             <img class="profile-img" src="{{ user_info.avatar.url }}" />
             <div class="details">
-                <span class="username">@{{ user_info.username }}</span>
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="username">@{{ user_info.username }}</span>
+                        <span class="fullname user-info">{{ user_info.last_name }} {{ user_info.first_name }}</span>
+                    </div>
+                    <div class="col-md-4">
+                        Нас: <span class="age user-info">{{ user_info.age }}</span>
+                        Хүйс: <span class="gender user-info">{{ user_info.gender }}</span>
+                    </div>
+                    <div class="col-md-4">
+                        Жин: <span class="weight user-info">{{ user_info.weight }}</span>
+                        Өндөр: <span class="height user-info">{{ user_info.height }}</span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="overlay"></div>

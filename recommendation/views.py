@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponse
 from django.core.validators import validate_email
+from django.core.files.storage import FileSystemStorage
 
 from datetime import datetime, date
 
@@ -11,15 +12,15 @@ from .models import User, Food, Machine_Data, Food_Nutrition, Food_Group
 
 def index(request):
 	if request.user.is_authenticated():
-		return redirect(dashboard_view)
+		return redirect(feed_view)
 	else:
 		return redirect(login_view)
 
 @login_required(login_url='/login/')
-def dashboard_view(request):
+def feed_view(request):
 	foods = Food.objects.order_by("-added_date")[:10]
 	nutrients = Food_Nutrition.objects.all()
-	return render(request, "recommendation/dashboard.html", {"user": request.user, "foods": foods})
+	return render(request, "recommendation/feed.html", {"user": request.user, "foods": foods})
 
 def login_view(request):
 	error = ""
@@ -32,7 +33,7 @@ def login_view(request):
 		if user is not None:
 			if user.is_active:
 				login(request, user)
-				return redirect(dashboard_view)
+				return redirect(feed_view)
 			else:
 				error = u"Хэрэглэгч идэвхигүй байна!"
 				return render(request, "authentication/login.html", {"error": error})
@@ -41,13 +42,13 @@ def login_view(request):
 			return render(request, "authentication/login.html", {"error": error})
 	else:
 		if request.user.is_authenticated():
-			return redirect(dashboard_view)
+			return redirect(feed_view)
 		else:
 			return render(request, "authentication/login.html", {"error": error})
 
 def register_view(request):
 	error = username = firstname = lastname = password = password_repeat = mail_address = birth_date = ""
-	height = weight = weight_diff = activity_level = 0.0
+	height = weight = weight_diff = activity_level = daily_calory = 0.0
 	gender = is_fat = age = bmr = bmi = 0
 	if request.POST:
 		mail_address = request.POST["email"]
@@ -61,8 +62,9 @@ def register_view(request):
 		height = float(request.POST["height"])/100
 		weight = float(request.POST["weight"])
 		activity_level = request.POST["activity-level"]
+		avatar = request.FILES["avatar"]
 
-		if not username or not firstname or not lastname or not password or not password_repeat or not mail_address or not height or not weight or not activity_level or not gender:
+		if not username or not firstname or not lastname or not password or not password_repeat or not mail_address or not height or not weight or not activity_level or not gender or not avatar:
 			error = u"Та шаардлагатай бүх талбарыг бөглөнө үү!"
 			return render(request, "authentication/register.html", {"error": error})
 		elif len(username) < 5:
@@ -75,10 +77,14 @@ def register_view(request):
 			error = u"Оруулсан мэйл хаяг буруу байна. Дахин шалгана уу!"
 			return render(request, "authentication/register.html", {"error": error})
 		else:
+			fs = FileSystemStorage()
+			filename = fs.save(avatar.name, avatar)
+			uploaded_file_url = fs.url(filename)
 			if(int(gender) == 1):
-				bmr = (weight*9.6) + (height*1.8*100) - (age * 4.7) + 655
-			elif(int(gender) == 2):
 				bmr = (weight*13.7) + (height*5*100) - (age * 6.8) + 66
+			elif(int(gender) == 2):
+				bmr = (weight*9.6) + (height*1.8*100) - (age * 4.7) + 655
+			daily_calory = bmr * activity_level
 			bmi = round(weight / (height * height), 2)
 			today = date.today()
 			age = today.year - birth_date.year
@@ -92,14 +98,20 @@ def register_view(request):
 				is_fat = 0
 				weight_diff = round(bmr, 2)
 
-			user = User.objects.create_user(username = username, first_name = firstname, last_name = lastname, email = mail_address, gender = gender, birth_date = birth_date, height = height, weight = weight, is_fat = is_fat, weight_diff = weight_diff, activity_level = activity_level, age = age, password = password)
+			user = User.objects.create_user(username = username, first_name = firstname, last_name = lastname, email = mail_address, gender = gender, birth_date = birth_date, height = height, weight = weight, is_fat = is_fat, weight_diff = weight_diff, activity_level = activity_level, age = age, password = password, daily_calory= daily_calory, avatar = uploaded_file_url)
 
-			return render(request, 'authentication/registration_successful.html', {"bmi": bmi, "bmr": bmr, "is_fat": is_fat, "weight_diff": weight_diff})
+			return redirect(dashboard_view)
 	else:
 		if request.user.is_authenticated():
-			return redirect(dashboard_view)
+			return redirect(feed_view)
 		else:
 			return render(request, "authentication/register.html", {"error": error})
+
+def dashboard_view(request):
+	if request.user.is_authenticated():
+		return render(request, "recommendation/dashboard.html", {"user": request.user})
+	else:
+		return redirect(login_view)
 
 def profile_detail_view(request, username):
 	try:
@@ -123,19 +135,29 @@ def food_detail_view(request, food_id):
 	except:
 		return render(request, "error/404.html")
 
-def favourite_food_list(request):
-	if request.user.is_authenticated():
-		user_id = request.user.id
-		foods = Food.objects.filter(user__id = user_id)
-		print foods
-		return render(request, "recommendation/favourite_foods.html", {"foods": foods})
+def favourite_food_list_view(request):
+	print "asdasd"
+	user_id = request.user
+	foods = Food.objects.filter(user_id = user_id)
+	return render(request, "recommendation/favourite_foods.html", {"foods": foods})
 
-# def add_food(request):
-# 	if request.method == "POST":
+def add_activity_view(request):
+	if request.POST:
+		return render(request, 'recommendation/add_activity.html')
+	else:
+		foods = Food.objects.all()
+		return render(request, "recommendation/add_activity.html", {"foods": foods})
+
+def get_statistic_view(request):
+	foods = Food.objects.all()
+	return render(request, "recommendation/statistic.html", {"foods": foods})
+
+def add_food_view(request):
+	if request.POST:
+		return render(request, "recommendation/add_food.html");
+	else:
+		return render(request, "recommendation/add_food.html");
 		
-# 	else:
-# 		return render(request, "recommendation/add_food.html");
-# 		
 def check_mail(mail):
 	try:
 		validate_email(mail)

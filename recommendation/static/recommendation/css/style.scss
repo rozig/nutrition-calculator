@@ -219,7 +219,7 @@ a {
                 bottom:0;
                 left:0;
                 z-index:3;
-                background-color:rgba(0, 0, 0, 0.6);
+                background-color:rgba(0, 0, 0, 0.8);
                 .profile-img {
                     position:absolute;
                     bottom:35px;
@@ -236,6 +236,12 @@ a {
                         font-size:18px;
                         font-weight:bold;
                         color:$primary-text-color;
+                    }
+                    .user-info {
+                        display: inline-block;
+                        color: #fff;
+                        font-size: 16px;
+                        margin: 10px 0;
                     }
                 }
             }
