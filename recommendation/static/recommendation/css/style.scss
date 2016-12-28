@@ -63,6 +63,30 @@ a {
     float:left;
     display:block;
 }
+.btn-custom {
+    background-color:$purple;
+    color:$primary-text-color;
+    transition:.5s;
+}
+.btn-custom:hover {
+    background-color:$purple-accent;
+    color:$primary-text-color;
+}
+.block {
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    overflow:hidden;
+    .block-header {
+        background-color:$purple;
+        color:#f5f5f5;
+        padding:10px 30px;
+        font-size:16px;
+    }
+    .block-main {
+        padding:20px 30px;
+        background:#fff;
+    }
+}
 .align-right {
     text-align:right;
 }
@@ -237,11 +261,17 @@ a {
                         font-weight:bold;
                         color:$primary-text-color;
                     }
+                    .user-info-item {
+                        color:#fff;
+                        font-weight:bold;
+                        font-size:16px;
+                    }
                     .user-info {
                         display: inline-block;
                         color: #fff;
                         font-size: 16px;
-                        margin: 10px 0;
+                        margin: 5px 0;
+                        font-weight:normal;
                     }
                 }
             }
@@ -266,6 +296,17 @@ a {
         width:100%;
         position: relative;
         overflow-x: auto;
+    }
+    .dashboard-container {
+        .header {
+            overflow:hidden;
+            padding:20px 0;
+            text-align:center;
+            background:#fff;
+        }
+    }
+    .activity-container {
+        padding:20px;
     }
     .feed-item {
         width: 450px;

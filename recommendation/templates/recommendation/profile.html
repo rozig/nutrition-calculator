@@ -12,15 +12,25 @@
                 <div class="row">
                     <div class="col-md-4">
                         <span class="username">@{{ user_info.username }}</span>
-                        <span class="fullname user-info">{{ user_info.last_name }} {{ user_info.first_name }}</span>
+                        <div class="user-info-item">
+                            <span class="fullname user-info">{{ user_info.last_name }} {{ user_info.first_name }}</span>
+                        </div>
                     </div>
                     <div class="col-md-4">
-                        Нас: <span class="age user-info">{{ user_info.age }}</span>
-                        Хүйс: <span class="gender user-info">{{ user_info.gender }}</span>
+                        <div class="user-info-item">
+                            Нас: <span class="age user-info">{{ user_info.age }}</span>
+                        </div>
+                        <div class="user-info-item">
+                            Хүйс: <span class="gender user-info">{{ user_info.gender }}</span>
+                        </div>
                     </div>
                     <div class="col-md-4">
-                        Жин: <span class="weight user-info">{{ user_info.weight }}</span>
-                        Өндөр: <span class="height user-info">{{ user_info.height }}</span>
+                        <div class="user-info-item">
+                            Жин: <span class="weight user-info">{{ user_info.weight }}</span>
+                        </div>
+                        <div class="user-info-item">
+                            Өндөр: <span class="height user-info">{{ user_info.height }}</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -33,7 +43,78 @@
     <div class="profile-content">
         <div class="row">
             <div class="col-md-9">
-                
+                {% for food in foods %}
+                <div class="feed-item">
+                    <div class="item-thumb">
+                        <img class="item-img" src="{{ food.image.url }}"/>
+                        <div class="gradient"></div>
+                        <div class="author-img">
+                            <a href="{% url 'profile_detail' food.chief.username %}">
+                                <img class="author-profile-img" src="{{ food.chief.avatar.url }}"/>
+                            </a>
+                        </div>
+                        <a href="{% url 'food_group_detail' food.group.id %}">
+                            <span class="item-category">{{ food.group.name }}</span>
+                        </a>
+                        <span class="item-date">{{ food.added_date | date:"Y оны m сарын d" }}</span>
+                        <!-- <div class="item-tags">
+                            <a href="#">
+                                <span class="item-tag">Жор</span>
+                            </a>
+                        </div> -->
+                        <a class="item-title" href="{% url 'food_detail' food.id %}">
+                            {{ food.name }}
+                        </a>
+                        <div class="item-actions">
+                            <span class="love-it">
+                                <i class="icon ion-ios-heart-outline"></i>
+                                Love it!
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item-brief-content">
+                        <p>{{ food.description | truncatewords:20 }}</p>
+                    </div>
+                    <div class="item-meta">
+                        <div class="col-40">
+                            <a class="meta-link" href="{% url 'profile_detail' food.chief.username %}">
+                                <span class="author-name">
+                                    <i class="icon ion-person"></i>
+                                    {{ food.chief.first_name }}
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-60 align-right">
+                            <span class="item-views">
+                                <i class="icon ion-eye"></i>
+                                123
+                            </span>
+                            <a class="meta-link" href="#">
+                                <span class="item-love-count">
+                                    <i class="icon ion-heart"></i>
+                                    {{ food.loves }}
+                                </span>
+                            </a>
+                            <a class="meta-link" href="#">
+                                <span class="item-comment-count">
+                                    <i class="icon ion-ios-chatbubble"></i>
+                                    7
+                                </span>
+                            </a>
+                            <a class="meta-link" href="#">
+                                <span class="share">
+                                    <i class="icon ion-ios-more-outline"></i>
+                                </span>
+                            </a>
+                            <div class="socials">
+                                <a class="link-fb">Facebook</a>
+                                <a class="link-tw">Twitter</a>
+                                <a class="link-pin">Pinterest</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
             </div>
             <div class="col-md-3">
                 

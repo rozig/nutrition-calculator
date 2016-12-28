@@ -84,7 +84,7 @@ def register_view(request):
 				bmr = (weight*13.7) + (height*5*100) - (age * 6.8) + 66
 			elif(int(gender) == 2):
 				bmr = (weight*9.6) + (height*1.8*100) - (age * 4.7) + 655
-			daily_calory = bmr * activity_level
+			daily_calory = float(bmr) * float(activity_level)
 			bmi = round(weight / (height * height), 2)
 			today = date.today()
 			age = today.year - birth_date.year
@@ -116,6 +116,7 @@ def dashboard_view(request):
 def profile_detail_view(request, username):
 	try:
 		user = User.objects.get(username = username)
+		# foods = Food.objects.get(chief = user)
 		return render(request, "recommendation/profile.html", {"user_info": user})
 	except:
 		return render(request, "error/404.html")

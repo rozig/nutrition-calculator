@@ -43,6 +43,28 @@ a {
   float: left;
   display: block; }
 
+.btn-custom {
+  background-color: #8C73A5;
+  color: #f5f5f5;
+  transition: .5s; }
+
+.btn-custom:hover {
+  background-color: #9881AE;
+  color: #f5f5f5; }
+
+.block {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  overflow: hidden; }
+  .block .block-header {
+    background-color: #8C73A5;
+    color: #f5f5f5;
+    padding: 10px 30px;
+    font-size: 16px; }
+  .block .block-main {
+    padding: 20px 30px;
+    background: #fff; }
+
 .align-right {
   text-align: right; }
 
@@ -186,11 +208,16 @@ a {
           font-size: 18px;
           font-weight: bold;
           color: #f5f5f5; }
+        .main-content .profile-container .header .profile-info .details .user-info-item {
+          color: #fff;
+          font-weight: bold;
+          font-size: 16px; }
         .main-content .profile-container .header .profile-info .details .user-info {
           display: inline-block;
           color: #fff;
           font-size: 16px;
-          margin: 10px 0; }
+          margin: 5px 0;
+          font-weight: normal; }
     .main-content .profile-container .header .overlay {
       position: absolute;
       top: 0;
@@ -208,6 +235,13 @@ a {
   width: 100%;
   position: relative;
   overflow-x: auto; }
+.main-content .dashboard-container .header {
+  overflow: hidden;
+  padding: 20px 0;
+  text-align: center;
+  background: #fff; }
+.main-content .activity-container {
+  padding: 20px; }
 .main-content .feed-item {
   width: 450px;
   margin: 20px;

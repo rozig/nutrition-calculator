@@ -1,22 +1,29 @@
-<form id="add-food">
-    <div class="form-group">
-        <label>Хоолны нэр</label>
-        <input id="food-name" type="text" name="food[name]">
+{% extends 'recommendation/base.html' %}
+{% load staticfiles %}
+{% block title %}Жор нэмэх{% endblock %}
+{% block stylesheets %}{% endblock %}
+{% block body %}
+<div class="activity-container">
+    <div class="block">
+        <div class="block-header">
+            Жор нэмэх
+        </div>
+        <div class="block-main">
+            <form id="select-activity" method="POST" action="{% url 'add_food' %}">
+                {% csrf_token %}
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="food-name"></label>
+                        </div>
+                        <div class="col-md-8">
+                            <input id="food-name" type="text" name="name" placeholder="Хоолны нэр...">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-    <div class="form-group">
-        <label>Хоолны нэр</label>
-        <input id="food-name" type="text" name="food[name]">
-    </div>
-    <div class="form-group">
-        <label>Хоолны нэр</label>
-        <input id="food-name" type="text" name="food[name]">
-    </div>
-    <div class="form-group">
-        <label>Хоолны нэр</label>
-        <input id="food-name" type="text" name="food[name]">
-    </div>
-    <div class="form-group">
-        <label>Хоолны нэр</label>
-        <input id="food-name" type="text" name="food[name]">
-    </div>
-</form>
+</div>
+{% endblock %}
+{% block javascripts %}{% endblock %}
