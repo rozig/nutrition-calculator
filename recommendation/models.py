@@ -19,6 +19,8 @@ class User(AbstractUser):
 	birth_date = models.DateField(auto_now = False, default = '1970-01-01')
 	height = models.FloatField(null = True)
 	weight = models.FloatField(null = True)
+	bmi = models.FloatField()
+	bmr = models.FloatField()
 	gender = models.IntegerField(default = '1')
 	is_fat = models.IntegerField(default = '0')
 	weight_diff = models.FloatField(default = '0')
