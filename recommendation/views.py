@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from django.shortcuts import render, redirect, render_to_response
+from django.shortcuts import render, redirect, render_to_response, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponse
@@ -8,7 +8,7 @@ from django.core.files.storage import FileSystemStorage
 
 from datetime import datetime, date
 
-from .models import User, Food, Machine_Data, Food_Nutrition, Food_Group
+from .models import User, Food, Machine_Data, Food_Nutrition, Food_Group, User_Activity
 
 def index(request):
 	if request.user.is_authenticated():
@@ -116,9 +116,13 @@ def dashboard_view(request):
 def profile_detail_view(request, username):
 	try:
 		user = User.objects.get(username = username)
-		# foods = Food.objects.get(chief = user)
-		return render(request, "recommendation/profile.html", {"user_info": user})
-	except:
+		foods = Food.objects.filter(chief = user).order_by("-added_date")
+		return render(request, "recommendation/profile.html", {
+			"user_info": user,
+			"foods": foods
+		})
+	except Exception as e:
+		print str(e)
 		return render(request, "error/404.html")
 
 def food_group_view(request, group_id):
@@ -131,20 +135,27 @@ def food_group_view(request, group_id):
 
 def food_detail_view(request, food_id):
 	try:
-		food = Food.objects.get(pk=food_id)
+		food = Food.objects.filter(pk=food_id)
+		views = food[0].views + 1
+		food.update(views = views)
 		return render(request, "recommendation/food_detail.html", {"food": food})
 	except:
 		return render(request, "error/404.html")
 
-def favourite_food_list_view(request):
-	print "asdasd"
-	user_id = request.user
-	foods = Food.objects.filter(user_id = user_id)
-	return render(request, "recommendation/favourite_foods.html", {"foods": foods})
+def favourite_foods_view(request):
+	try:
+		foods = get_object_or_404(Food, chief=request.user)
+		return render(request, "recommendation/favourite_foods.html", {"foods": foods})
+	except Exception as e:
+		print str(e)
+		return render(request, "error/404.html")
 
 def add_activity_view(request):
 	if request.POST:
-		return render(request, 'recommendation/add_activity.html')
+		food_id = request.POST["food"]
+		food = Food.objects.filter(pk = food_id)
+		activity = User_Activity.objects.create(user = request.user, food = food)
+		return redirect(feed_view)
 	else:
 		foods = Food.objects.all()
 		return render(request, "recommendation/add_activity.html", {"foods": foods})
@@ -152,6 +163,11 @@ def add_activity_view(request):
 def get_statistic_view(request):
 	foods = Food.objects.all()
 	return render(request, "recommendation/statistic.html", {"foods": foods})
+
+def food_delete_view(request, food_id):
+	food = Food.objects.filter(pk=food_id).delete()
+	return redirect(dashboard_view)
+
 
 def add_food_view(request):
 	if request.POST:

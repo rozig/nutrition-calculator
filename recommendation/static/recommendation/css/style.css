@@ -178,6 +178,16 @@ a {
 .main-content .profile-container {
   width: 100%;
   position: relative; }
+  .main-content .profile-container .btn-edit-profile {
+    position: absolute;
+    top: -50px;
+    left: 190px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #ffffff;
+    transition: 0.5s; }
+  .main-content .profile-container .btn-edit-profile:hover {
+    color: #ffffff;
+    background-color: #8C73A5; }
   .main-content .profile-container .header {
     position: relative;
     height: 250px;
@@ -228,6 +238,31 @@ a {
       background-position: top left;
       background-repeat: repeat;
       z-index: 2; }
+  .main-content .profile-container .profile-item {
+    margin: 20px 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 6px; }
+    .main-content .profile-container .profile-item a {
+      color: #393939; }
+    .main-content .profile-container .profile-item .item-img img {
+      width: 100%;
+      height: 100%; }
+    .main-content .profile-container .profile-item .item-top .group-name {
+      float: right; }
+    .main-content .profile-container .profile-item .item-bottom .item-action {
+      background: #8C73A5;
+      margin: 5px;
+      border-radius: 20px;
+      padding: 3px 8px;
+      font-size: 12px;
+      transition: .3s;
+      text-decoration: none; }
+      .main-content .profile-container .profile-item .item-bottom .item-action span {
+        color: #ffffff; }
+    .main-content .profile-container .profile-item .item-bottom .item-action:hover {
+      text-decoration: none;
+      opacity: 0.8; }
   .main-content .profile-container .user-menu {
     background-color: #222222;
     height: 80px; }

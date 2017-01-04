@@ -32,7 +32,7 @@ class User(AbstractUser):
 
 	def set_age(self, value):
 		self.age = value
-	
+
 class Food(models.Model):
 	name = models.CharField(max_length = 200)
 	total_calories = models.FloatField(null = True)
@@ -44,9 +44,15 @@ class Food(models.Model):
 	lovers = models.ManyToManyField(User, through='Food_and_User')
 	loves = models.IntegerField(default = "0")
 	added_date = models.DateField(auto_now = True)
+	views = models.IntegerField(default = 0)
 
 	def __unicode__(self):
 		return u'%s' % self.name
+
+class User_Activity(models.Model):
+	user = models.ForeignKey(User)
+	food = models.ForeignKey(Food)
+	date = models.DateField(auto_now = True)
 
 class Food_and_User(models.Model):
 	user = models.ForeignKey(User)

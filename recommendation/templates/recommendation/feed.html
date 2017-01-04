@@ -26,12 +26,12 @@
             <a class="item-title" href="{% url 'food_detail' food.id %}">
                 {{ food.name }}
             </a>
-            <div class="item-actions">
+            <!-- <div class="item-actions">
                 <span class="love-it">
                     <i class="icon ion-ios-heart-outline"></i>
                     Love it!
                 </span>
-            </div>
+            </div> -->
         </div>
         <div class="item-brief-content">
             <p>{{ food.description | truncatewords:20 }}</p>
@@ -48,7 +48,7 @@
             <div class="col-60 align-right">
                 <span class="item-views">
                     <i class="icon ion-eye"></i>
-                    123
+                    {{ food.views }}
                 </span>
                 <a class="meta-link" href="#">
                     <span class="item-love-count">

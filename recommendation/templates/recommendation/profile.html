@@ -8,6 +8,10 @@
         <img class="cover" src="{% static 'recommendation/images/cover.jpg' %}" />
         <div class="profile-info">
             <img class="profile-img" src="{{ user_info.avatar.url }}" />
+            <a class="btn btn-edit-profile">
+                <i class="icon ion-edit"></i>
+                Засварлах
+            </a>
             <div class="details">
                 <div class="row">
                     <div class="col-md-3">
@@ -21,15 +25,15 @@
                             Нас: <span class="age user-info">{{ user_info.age }}</span>
                         </div>
                         <div class="user-info-item">
-                            Хүйс: <span class="gender user-info">{{ user_info.gender }}</span>
+                            Хүйс: <span class="gender user-info">{% if user_info.gender == 1 %}Эр{% else %}Эм{% endif %}</span>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="user-info-item">
-                            Жин: <span class="weight user-info">{{ user_info.weight }}</span>
+                            Жин: <span class="weight user-info">{{ user_info.weight }} кг</span>
                         </div>
                         <div class="user-info-item">
-                            Өндөр: <span class="height user-info">{{ user_info.height }}</span>
+                            Өндөр: <span class="height user-info">{{ user_info.height }} см</span>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -45,86 +49,73 @@
         </div>
         <div class="overlay"></div>
     </div>
-    <div class="user-menu">
+    <!-- <div class="user-menu">
         
-    </div>
+    </div> -->
     <div class="profile-content">
         <div class="row">
-            <div class="col-md-9">
-                {% for food in foods %}
-                <div class="feed-item">
-                    <div class="item-thumb">
-                        <img class="item-img" src="{{ food.image.url }}"/>
-                        <div class="gradient"></div>
-                        <div class="author-img">
-                            <a href="{% url 'profile_detail' food.chief.username %}">
-                                <img class="author-profile-img" src="{{ food.chief.avatar.url }}"/>
-                            </a>
-                        </div>
-                        <a href="{% url 'food_group_detail' food.group.id %}">
-                            <span class="item-category">{{ food.group.name }}</span>
-                        </a>
-                        <span class="item-date">{{ food.added_date | date:"Y оны m сарын d" }}</span>
-                        <!-- <div class="item-tags">
-                            <a href="#">
-                                <span class="item-tag">Жор</span>
-                            </a>
-                        </div> -->
-                        <a class="item-title" href="{% url 'food_detail' food.id %}">
-                            {{ food.name }}
-                        </a>
-                        <div class="item-actions">
-                            <span class="love-it">
-                                <i class="icon ion-ios-heart-outline"></i>
-                                Love it!
-                            </span>
-                        </div>
-                    </div>
-                    <div class="item-brief-content">
-                        <p>{{ food.description | truncatewords:20 }}</p>
-                    </div>
-                    <div class="item-meta">
-                        <div class="col-40">
-                            <a class="meta-link" href="{% url 'profile_detail' food.chief.username %}">
-                                <span class="author-name">
-                                    <i class="icon ion-person"></i>
-                                    {{ food.chief.first_name }}
-                                </span>
-                            </a>
-                        </div>
-                        <div class="col-60 align-right">
-                            <span class="item-views">
-                                <i class="icon ion-eye"></i>
-                                123
-                            </span>
-                            <a class="meta-link" href="#">
-                                <span class="item-love-count">
-                                    <i class="icon ion-heart"></i>
-                                    {{ food.loves }}
-                                </span>
-                            </a>
-                            <a class="meta-link" href="#">
-                                <span class="item-comment-count">
-                                    <i class="icon ion-ios-chatbubble"></i>
-                                    7
-                                </span>
-                            </a>
-                            <a class="meta-link" href="#">
-                                <span class="share">
-                                    <i class="icon ion-ios-more-outline"></i>
-                                </span>
-                            </a>
-                            <div class="socials">
-                                <a class="link-fb">Facebook</a>
-                                <a class="link-tw">Twitter</a>
-                                <a class="link-pin">Pinterest</a>
+            <div class="col-md-8">
+                {% if foods|length > 0 %}
+                    {% for food in foods %}
+                    <div class="profile-item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="item-img">
+                                    <img src="{{ food.image.url }}">
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="item-top">
+                                    <span class="published-date">{{ food.added_date|timesince }}-н өмнө</span>
+                                    <span class="group-name">{{ food.group.name }}</span>
+                                    <a href="{% url 'food_detail' food.id %}">
+                                        <h3 class="title">{{ food.name }}</h3>
+                                    </a>
+                                </div>
+                                <div class="item-middle">
+                                    <p>{{ food.description | truncatewords:30 }}</p>
+                                </div>
+                                <div class="item-bottom">
+                                    <a class="item-action">
+                                        <span class="item-love-count">
+                                            <i class="icon ion-eye"></i>
+                                            {{ food.views }}
+                                        </span>
+                                    </a>
+                                    <a class="item-action" href="#">
+                                        <span class="item-comment-count">
+                                            <i class="icon ion-ios-chatbubble"></i>
+                                            Сэтгэгдэл
+                                        </span>
+                                    </a>
+                                    <a class="item-action" href="#">
+                                        <span class="item-edit">
+                                            <i class="icon ion-edit"></i>
+                                            Засах
+                                        </span>
+                                    </a>
+                                    <a class="item-action" href="{% url 'food_delete' food.id %}">
+                                        <span class="item-delete">
+                                            <i class="icon ion-trash-a"></i>
+                                            Устгах
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    {% endfor %}
+                {% else %}
+                <div class="profile-item">
+                    <div class="row">
+                        <div class="col-md-12">
+                            Уг хэрэглэгч системд хоол оруулагүй байна.
+                        </div>
+                    </div>
                 </div>
-                {% endfor %}
+                {% endif %}
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 
             </div>
         </div>
